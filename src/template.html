@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{meta_title}}</title>
+<meta name="description" content="{{meta_desc}}">
+{{ROBOTS}}
+<link rel="canonical" href="{{SITE}}{{path}}">
+<link rel="alternate" hreflang="it" href="{{SITE}}/">
+<link rel="alternate" hreflang="en" href="{{SITE}}/en/">
+<link rel="alternate" hreflang="de" href="{{SITE}}/de/">
+<link rel="alternate" hreflang="x-default" href="{{SITE}}/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{meta_title}}">
+<meta property="og:description" content="{{meta_desc}}">
+<meta property="og:image" content="{{IMG}}/2024/03/132-Locanda-Elisa-Dic-2023-jpg.webp">
+<meta name="theme-color" content="#0c0c0c">
+<link rel="icon" href="{{IMG}}/2022/06/cropped-Favicon_Tavola-disegno-1-270x270.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500&family=Marcellus&display=swap" rel="stylesheet">
+<script>document.documentElement.className+=" js"</script>
+<link rel="stylesheet" href="{{ROOT}}assets/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Hotel","name":"Hotel Diffuso Locanda Elisa","url":"{{SITE}}{{path}}","telephone":"+393773594260","email":"info@locandaelisa.it","image":"{{IMG}}/2024/03/132-Locanda-Elisa-Dic-2023-jpg.webp","checkinTime":"14:00","checkoutTime":"11:00","petsAllowed":"{{ld_pets}}","numberOfRooms":21,"address":{"@type":"PostalAddress","streetAddress":"Via Campiglio, 59","postalCode":"38025","addressLocality":"Dimaro Folgarida","addressRegion":"TN","addressCountry":"IT"},"amenityFeature":[{"@type":"LocationFeatureSpecification","name":"Free WiFi","value":true},{"@type":"LocationFeatureSpecification","name":"Restaurant","value":true},{"@type":"LocationFeatureSpecification","name":"Bar","value":true},{"@type":"LocationFeatureSpecification","name":"Kitchen (apartments)","value":true}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"{{faq1_q}}","acceptedAnswer":{"@type":"Answer","text":"{{faq1_a}}"}},
+{"@type":"Question","name":"{{faq2_q}}","acceptedAnswer":{"@type":"Answer","text":"{{faq2_a}}"}},
+{"@type":"Question","name":"{{faq3_q}}","acceptedAnswer":{"@type":"Answer","text":"{{faq3_a}}"}},
+{"@type":"Question","name":"{{faq4_q}}","acceptedAnswer":{"@type":"Answer","text":"{{faq4_a}}"}},
+{"@type":"Question","name":"{{faq5_q}}","acceptedAnswer":{"@type":"Answer","text":"{{faq5_a}}"}},
+{"@type":"Question","name":"{{faq6_q}}","acceptedAnswer":{"@type":"Answer","text":"{{faq6_a}}"}}
+]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">{{skip}}</a>
+
+<header class="hd is-dark" id="hd">
+  <button class="hd__menu" id="menuBtn" aria-label="{{menu_lbl}}" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+  <a class="hd__logo" href="#top" aria-label="Locanda Elisa"><img src="{{IMG}}/2022/06/Locanda-Elisa-marchio-colore.svg" alt="Locanda Elisa" width="160" height="96"></a>
+  <button class="btn-o hd__book" data-open="req" data-cta="header">{{book}}</button>
+</header>
+
+<div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="{{menu_lbl}}" hidden>
+  <button class="menu__x" id="menuX" aria-label="{{close_lbl}}"><span></span><span></span></button>
+  <div class="menu__body">
+  <nav class="menu__nav">
+    <a href="#camere">{{m_rooms}}</a>
+    <a href="{{u_apts}}" target="_blank" rel="noopener">{{m_apts}}<span class="sr"> ({{newtab}})</span></a>
+    <a href="#bistrot">{{m_bistrot}}</a>
+    <a href="{{u_table}}" target="_blank" rel="noopener">{{m_table}}<span class="sr"> ({{newtab}})</span></a>
+    <a href="{{u_booking}}" target="_blank" rel="noopener" data-cta="menu_booking">{{m_booking}}<span class="sr"> ({{newtab}})</span></a>
+    <a href="{{u_contact}}" target="_blank" rel="noopener">{{m_contact}}<span class="sr"> ({{newtab}})</span></a>
+    <a href="#faq">{{m_faq}}</a>
+  </nav>
+  <div class="menu__foot">
+    <div class="lang" role="group" aria-label="Lingua / Language / Sprache"><a href="{{ROOT_IT}}" lang="it" hreflang="it" aria-label="Italiano" {{cur_it}}>IT</a><a href="{{ROOT_EN}}" lang="en" hreflang="en" aria-label="English" {{cur_en}}>EN</a><a href="{{ROOT_DE}}" lang="de" hreflang="de" aria-label="Deutsch" {{cur_de}}>DE</a></div>
+    <a href="tel:+393773594260" data-cta="menu_tel">+39 377 3594260</a>
+    <a href="mailto:info@locandaelisa.it" data-cta="menu_mail">info@locandaelisa.it</a>
+  </div>
+  </div>
+</div>
+
+<main id="main" tabindex="-1">
+
+<!-- HERO: dove, per cosa, perché qui + un'unica azione -->
+<section class="hero" id="top" data-theme="dark">
+  <img class="hero__bg" src="{{IMG}}/2024/03/132-Locanda-Elisa-Dic-2023-jpg.webp" alt="{{hero_alt}}" fetchpriority="high" decoding="async">
+  <div class="hero__shade"></div>
+  <div class="hero__c">
+    <span class="eyebrow">{{hero_e}}</span>
+    <h1>{{hero_h1}}</h1>
+    <p class="hero__sub">{{hero_p1}}</p>
+    <div class="hero__cta">
+      <button class="btn-f" data-open="req" data-cta="hero">{{hero_cta}}</button>
+      <a class="lnk lnk--w" href="tel:+393773594260" data-cta="hero_tel">{{hero_tel}}</a>
+    </div>
+    <p class="hero__micro">{{hero_micro}}</p>
+  </div>
+  <span class="hero__cue" aria-hidden="true"></span>
+</section>
+
+<!-- PROVE CONCRETE (fatti verificabili dal sito della struttura) -->
+<section class="proof" data-theme="light" aria-label="{{proof_label}}">
+  <div><b>{{pr1_n}}</b><span>{{pr1_t}}</span></div>
+  <div><b>{{pr2_n}}</b><span>{{pr2_t}}</span></div>
+  <div><b>{{pr3_n}}</b><span>{{pr3_t}}</span></div>
+  <div><b>{{pr4_n}}</b><span>{{pr4_t}}</span></div>
+</section>
+
+<!-- STORY: pannelli a scorrimento -->
+<section class="story" id="story" data-theme="dark" style="--n:4">
+  <div class="story__stick">
+    <div class="story__bgs">
+      <img class="story__bg is-on" src="{{IMG}}/2024/03/180-Locanda-Elisa-Dic-2023-1-jpg.webp" alt="{{pn1_alt}}" loading="lazy" decoding="async">
+      <img class="story__bg" src="{{IMG}}/2024/01/066-Locanda-Elisa-Dic-2023-jpg.webp" alt="{{pn2_alt}}" loading="lazy" decoding="async">
+      <img class="story__bg" src="{{IMG}}/2022/07/Morgana-03.jpg" alt="{{pn3_alt}}" loading="lazy" decoding="async">
+      <img class="story__bg" src="{{IMG}}/2022/06/Asporto-e-consegna-a-domicilio.jpg" alt="{{pn4_alt}}" loading="lazy" decoding="async">
+    </div>
+    <div class="story__shade"></div>
+    <div class="story__txts">
+      <div class="story__t is-on" aria-current="true"><span class="eyebrow">{{pn1_e}}</span><h3>{{pn1_h}}</h3><p>{{pn1_p}}</p><a class="btn-o btn-o--sm" href="{{u_stay}}" target="_blank" rel="noopener">{{explore}}<span class="sr">: {{pn1_h}} ({{newtab}})</span></a></div>
+      <div class="story__t"><span class="eyebrow">{{pn2_e}}</span><h3>{{pn2_h}}</h3><p>{{pn2_p}}</p><a class="btn-o btn-o--sm" href="#camere" tabindex="-1">{{explore}}<span class="sr">: {{pn2_h}}</span></a></div>
+      <div class="story__t"><span class="eyebrow">{{pn3_e}}</span><h3>{{pn3_h}}</h3><p>{{pn3_p}}</p><a class="btn-o btn-o--sm" href="{{u_apts}}" target="_blank" rel="noopener" tabindex="-1">{{explore}}<span class="sr">: {{pn3_h}} ({{newtab}})</span></a></div>
+      <div class="story__t"><span class="eyebrow">{{pn4_e}}</span><h3>{{pn4_h}}</h3><p>{{pn4_p}}</p><a class="btn-o btn-o--sm" href="#bistrot" tabindex="-1">{{explore}}<span class="sr">: {{pn4_h}}</span></a></div>
+    </div>
+    <ol class="story__dots" id="dots" aria-hidden="true"><li class="is-on"></li><li></li><li></li><li></li></ol>
+  </div>
+</section>
+
+<!-- IL BISTROT: carosello -->
+<section class="spot" id="bistrot" data-theme="light">
+  <div class="spot__l">
+    <span class="eyebrow eyebrow--dk">{{sp_e}}</span>
+    <h3 id="spH">{{sp_h}}</h3>
+    <p>{{sp_p}}</p>
+    <div class="spot__ctl">
+      <span class="bar"><i id="bar"></i></span>
+      <button class="arr" id="prev" aria-label="{{sp_prev}}" aria-controls="track"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <button class="arr" id="next" aria-label="{{sp_next}}" aria-controls="track"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+    </div>
+  </div>
+  <div class="spot__track" id="track" tabindex="0" role="region" aria-labelledby="spH">
+    <article class="scard"><img src="{{IMG}}/2022/06/img-prodotti-genuini.png" alt="{{sc1_alt}}" loading="lazy" decoding="async"><span class="eyebrow eyebrow--dk">{{sc1_e}}</span><h4>{{sc1_h}}</h4><p>{{sc1_p}}</p><a class="lnk" href="{{u_bistrot}}" target="_blank" rel="noopener">{{explore}}<span class="sr">: {{sc1_h}} ({{newtab}})</span></a></article>
+    <article class="scard"><img src="{{IMG}}/2024/01/161-Locanda-Elisa-Dic-2023-jpg.webp" alt="{{sc2_alt}}" loading="lazy" decoding="async"><span class="eyebrow eyebrow--dk">{{sc2_e}}</span><h4>{{sc2_h}}</h4><p>{{sc2_p}}</p><a class="lnk" href="{{u_bistrot}}" target="_blank" rel="noopener">{{explore}}<span class="sr">: {{sc2_h}} ({{newtab}})</span></a></article>
+    <article class="scard"><img src="{{IMG}}/2022/07/servizio-giardino-eventi.jpg" alt="{{sc3_alt}}" loading="lazy" decoding="async"><span class="eyebrow eyebrow--dk">{{sc3_e}}</span><h4>{{sc3_h}}</h4><p>{{sc3_p}}</p><a class="lnk" href="{{u_bistrot}}" target="_blank" rel="noopener">{{explore}}<span class="sr">: {{sc3_h}} ({{newtab}})</span></a></article>
+    <article class="scard"><img src="{{IMG}}/2022/06/Business-Locanda-Elisa-2.jpg" alt="{{sc4_alt}}" loading="lazy" decoding="async"><span class="eyebrow eyebrow--dk">{{sc4_e}}</span><h4>{{sc4_h}}</h4><p>{{sc4_p}}</p><a class="lnk" href="{{u_contact}}" target="_blank" rel="noopener">{{sc4_cta}}<span class="sr">: {{sc4_h}} ({{newtab}})</span></a></article>
+  </div>
+</section>
+
+<!-- CAMERE E APPARTAMENTI: immagine a filo con testo centrato -->
+<section class="stay" id="camere" data-theme="light">
+  <div class="stay__hero">
+    <img src="{{IMG}}/2024/01/072-Locanda-Elisa-Dic-2023-jpg.webp" alt="{{st_alt}}" loading="lazy" decoding="async">
+    <div class="stay__shade"></div>
+    <div class="stay__c">
+      <span class="eyebrow">{{st_e}}</span>
+      <h3>{{st_h}}</h3>
+      <p>{{st_p}}</p>
+      <div class="stay__btn"><button class="btn-f" data-open="req" data-cta="rooms">{{book_avail}}</button><a class="lnk lnk--w" href="{{u_booking}}" target="_blank" rel="noopener" data-cta="rooms_booking">{{book_online}}<span class="sr"> ({{newtab}})</span></a></div>
+    </div>
+  </div>
+</section>
+
+<section class="grid4" data-theme="light">
+  <article><img src="{{IMG}}/2024/01/063-Locanda-Elisa-Dic-2023-1-jpg.webp" alt="{{g1_alt}}" loading="lazy" decoding="async"><h4>{{g1_h}}</h4><p>{{g1_p}}</p><div class="act"><button class="btn-o btn-o--sm btn-o--dk" data-open="req" data-room="1" data-cta="grid_doppia">{{book_avail}}<span class="sr">: {{g1_h}}</span></button><a class="lnk" href="{{u_rooms}}" target="_blank" rel="noopener">{{explore}}<span class="sr">: {{g1_h}} ({{newtab}})</span></a></div></article>
+  <article><img src="{{IMG}}/2024/01/076-Locanda-Elisa-Dic-2023-jpg.webp" alt="{{g2_alt}}" loading="lazy" decoding="async"><h4>{{g2_h}}</h4><p>{{g2_p}}</p><div class="act"><button class="btn-o btn-o--sm btn-o--dk" data-open="req" data-room="2" data-cta="grid_tripla">{{book_avail}}<span class="sr">: {{g2_h}}</span></button><a class="lnk" href="{{u_rooms}}" target="_blank" rel="noopener">{{explore}}<span class="sr">: {{g2_h}} ({{newtab}})</span></a></div></article>
+  <article><img src="{{IMG}}/2022/07/Jonagold-05.jpg" alt="{{g3_alt}}" loading="lazy" decoding="async"><h4>{{g3_h}}</h4><p>{{g3_p}}</p><div class="act"><button class="btn-o btn-o--sm btn-o--dk" data-open="req" data-room="3" data-cta="grid_app4">{{book_avail}}<span class="sr">: {{g3_h}}</span></button><a class="lnk" href="{{u_apts}}" target="_blank" rel="noopener">{{explore}}<span class="sr">: {{g3_h}} ({{newtab}})</span></a></div></article>
+  <article><img src="{{IMG}}/2022/07/Golden-02.jpg" alt="{{g4_alt}}" loading="lazy" decoding="async"><h4>{{g4_h}}</h4><p>{{g4_p}}</p><div class="act"><button class="btn-o btn-o--sm btn-o--dk" data-open="req" data-room="4" data-cta="grid_app7">{{book_avail}}<span class="sr">: {{g4_h}}</span></button><a class="lnk" href="{{u_apts}}" target="_blank" rel="noopener">{{explore}}<span class="sr">: {{g4_h}} ({{newtab}})</span></a></div></article>
+</section>
+
+<!-- Slot recensioni: inserire qui solo recensioni reali (nome, provenienza, data, fonte) -->
+
+<!-- FAQ: risposte alle obiezioni -->
+<section class="faq" id="faq" data-theme="light">
+  <div class="faq__l">
+    <span class="eyebrow eyebrow--dk">{{faq_e}}</span>
+    <h3>{{faq_h}}</h3>
+  </div>
+  <div class="faq__r">
+    <details><summary>{{faq1_q}}</summary><p>{{faq1_a}}</p></details>
+    <details><summary>{{faq2_q}}</summary><p>{{faq2_a}}</p></details>
+    <details><summary>{{faq3_q}}</summary><p>{{faq3_a}}</p></details>
+    <details><summary>{{faq4_q}}</summary><p>{{faq4_a}}</p></details>
+    <details><summary>{{faq5_q}}</summary><p>{{faq5_a}}</p></details>
+    <details><summary>{{faq6_q}}</summary><p>{{faq6_a}}</p></details>
+  </div>
+</section>
+
+<!-- CHIUSURA: richiesta di soggiorno -->
+<section class="fin" id="richiesta" data-theme="dark">
+  <img class="fin__bg" src="{{IMG}}/2024/03/132-Locanda-Elisa-Dic-2023-jpg.webp" alt="" loading="lazy" decoding="async">
+  <div class="fin__shade"></div>
+  <div class="fin__c">
+    <span class="eyebrow">{{fin_e}}</span>
+    <h3>{{fin_h}}</h3>
+    <p>{{fin_p}}</p>
+    <ul class="fin__l"><li>{{fin_l1}}</li><li>{{fin_l2}}</li><li>{{fin_l3}}</li></ul>
+    <div class="fin__cta"><button class="btn-f" data-open="req" data-cta="final">{{hero_cta}}</button></div>
+    <p class="fin__d">{{fin_d}} <a href="tel:+393773594260" data-cta="final_tel">+39 377 3594260</a> · <a href="mailto:info@locandaelisa.it" data-cta="final_mail">info@locandaelisa.it</a></p>
+  </div>
+</section>
+
+</main>
+
+<footer class="ft" data-theme="light">
+  <nav class="crumb" aria-label="breadcrumb"><a href="{{u_home}}" target="_blank" rel="noopener">{{cr_home}}<span class="sr"> ({{newtab}})</span></a><i></i><a href="#top">{{cr_val}}</a><i></i><span aria-current="page">{{cr_hotel}}</span></nav>
+  <div class="ft__main">
+    <a class="ft__logo" href="#top" aria-label="Locanda Elisa"><img src="{{IMG}}/2022/06/Locanda-Elisa-marchio-colore.svg" alt="Locanda Elisa" loading="lazy" width="180" height="108"></a>
+    <div class="ft__cols">
+      <div><h5>{{ft_c1}}</h5>
+        <a href="{{u_stay}}" target="_blank" rel="noopener">{{m_stay}}<span class="sr"> ({{newtab}})</span></a>
+        <a href="{{u_rooms}}" target="_blank" rel="noopener">{{m_rooms}}<span class="sr"> ({{newtab}})</span></a>
+        <a href="{{u_apts}}" target="_blank" rel="noopener">{{m_apts}}<span class="sr"> ({{newtab}})</span></a>
+        <a href="{{u_booking}}" target="_blank" rel="noopener" data-cta="footer_booking">{{m_booking}}<span class="sr"> ({{newtab}})</span></a></div>
+      <div><h5>{{ft_c2}}</h5>
+        <a href="{{u_bistrot}}" target="_blank" rel="noopener">{{m_bistrot}}<span class="sr"> ({{newtab}})</span></a>
+        <a href="{{u_table}}" target="_blank" rel="noopener">{{m_table}}<span class="sr"> ({{newtab}})</span></a>
+        <a href="tel:+390463811408" data-cta="footer_tel_bistrot">{{ft_bistrot_tel}} +39 0463 811408</a>
+        <span>{{ft_hours}}</span></div>
+      <div><h5>{{ft_c3}}</h5>
+        <a href="tel:+393773594260" data-cta="footer_tel">+39 377 3594260</a>
+        <a href="tel:+393773591831" data-cta="footer_tel2">+39 377 3591831</a>
+        <a href="mailto:info@locandaelisa.it" data-cta="footer_mail">info@locandaelisa.it</a>
+        <a href="https://goo.gl/maps/Z59KfSWmMS33JHzA8" target="_blank" rel="noopener">Via Campiglio, 59<br>38025 Dimaro Folgarida (TN)<span class="sr"> ({{newtab}})</span></a></div>
+      <div><h5>{{ft_c4}}</h5>
+        <button class="lnk-b" data-open="req" data-cta="footer">{{m_req}}</button>
+        <a href="{{u_home}}" target="_blank" rel="noopener">{{ft_full}}<span class="sr"> ({{newtab}})</span></a>
+        <a href="https://locandaelisa.it/privacy-policy/" target="_blank" rel="noopener">{{ft_privacy}}<span class="sr"> ({{newtab}})</span></a>
+        <a href="https://locandaelisa.it/cookie-policy/" target="_blank" rel="noopener">{{ft_cookie}}<span class="sr"> ({{newtab}})</span></a></div>
+    </div>
+  </div>
+  <div class="ft__bar">
+    <div class="soc"><a href="https://www.instagram.com/locanda.elisa/" rel="noopener" target="_blank">Instagram<span class="sr"> ({{newtab}})</span></a><a href="https://facebook.com/locandaelisadimaro" rel="noopener" target="_blank">Facebook<span class="sr"> ({{newtab}})</span></a><a href="https://www.tripadvisor.it/Restaurant_Review-g12850059-d24118761-Reviews-Locanda_Elisa-Dimaro_Dimaro_Folgarida_Province_of_Trento_Trentino_Alto_Adige.html" rel="noopener" target="_blank">Tripadvisor<span class="sr"> ({{newtab}})</span></a></div>
+    <p>LOCANDA ELISA &middot; P.IVA 02651110226 &middot; CIN Garnì IT022233A1ZN7R25AA &middot; CIN Casa Elisa IT022233B4DXV4FKKK &middot; &copy; 2026 Locanda Elisa</p>
+  </div>
+</footer>
+
+<!-- Barra CTA mobile -->
+<div class="sticky" id="sticky">
+  <a class="btn-o btn-o--sm" href="tel:+393773594260" data-cta="sticky_tel">{{sticky_call}}</a>
+  <button class="btn-f" data-open="req" data-cta="sticky">{{book}}</button>
+</div>
+
+<!-- Richiesta di soggiorno -->
+<dialog class="req" id="req" aria-labelledby="reqT" aria-describedby="reqLead">
+  <button class="req__x" id="reqX" aria-label="{{close_lbl}}"><span></span><span></span></button>
+  <form id="quote" novalidate>
+    <h3 id="reqT">{{req_h}}</h3>
+    <p class="req__lead" id="reqLead">{{req_lead}}</p>
+    <div class="row">
+      <label>{{form_name}}<input name="name" type="text" autocomplete="name" required><span class="fe" id="fe-name" aria-hidden="true">{{e_name}}</span></label>
+      <label>{{form_phone}}<input name="phone" type="tel" inputmode="tel" autocomplete="tel"></label>
+    </div>
+    <label>{{form_email}}<input name="email" type="email" inputmode="email" autocomplete="email" autocapitalize="none" spellcheck="false" required><span class="fe" id="fe-email" aria-hidden="true">{{e_email0}}</span></label>
+    <div class="row">
+      <label>{{form_in}}<input name="checkin" type="date" autocomplete="off" required><span class="fe" id="fe-checkin" aria-hidden="true">{{e_in0}}</span></label>
+      <label>{{form_out}}<input name="checkout" type="date" autocomplete="off" required><span class="fe" id="fe-checkout" aria-hidden="true">{{e_out0}}</span></label>
+    </div>
+    <div class="row row--3">
+      <label>{{form_adults}}<input name="adults" type="number" inputmode="numeric" autocomplete="off" min="1" max="10" value="2" required><span class="fe" id="fe-adults" aria-hidden="true">{{e_adults}}</span></label>
+      <label>{{form_kids}}<input name="kids" type="number" inputmode="numeric" autocomplete="off" min="0" max="8" value="0"><span class="fe" id="fe-kids" aria-hidden="true">{{e_kids}}</span></label>
+      <label>{{form_room}}<select name="room"><option>{{opt_any}}</option><option>{{opt_doppia}}</option><option>{{opt_tripla}}</option><option>{{opt_app4}}</option><option>{{opt_app7}}</option></select></label>
+    </div>
+    <label>{{form_msg}}<textarea name="message" rows="3" maxlength="800" placeholder="{{form_ph}}"></textarea></label>
+    <label class="check"><input type="checkbox" name="privacy" required> <span>{{form_priv1}} <a href="https://locandaelisa.it/privacy-policy/" target="_blank" rel="noopener">{{form_priv2}}<span class="sr"> ({{newtab}})</span></a>.</span><span class="fe" id="fe-privacy" aria-hidden="true">{{form_err_priv}}</span></label>
+    <button class="btn-s" type="submit" aria-describedby="reqMicro">{{form_btn}}</button>
+    <p class="req__err" id="formErr" role="alert" hidden>{{form_err}}</p>
+    <div class="req__ok" id="reqOk">
+      <p class="req__okt" id="reqOkMsg" role="status"></p>
+      <p class="req__oka" id="reqOkAlt" hidden>{{form_ok_alt}} <a class="lnk" id="reqRetry" href="mailto:info@locandaelisa.it" data-cta="form_retry">{{form_ok_retry}}</a></p>
+    </div>
+    <p class="req__micro" id="reqMicro">{{form_micro}}</p>
+    <p class="req__micro">{{fin_d}} <a href="tel:+393773594260" data-cta="req_tel">+39 377 3594260</a> &middot; <a href="mailto:info@locandaelisa.it" data-cta="req_mail">info@locandaelisa.it</a></p>
+  </form>
+</dialog>
+
+<script>window.BF={to:"info@locandaelisa.it",subject:"{{mail_subject}}",lbl:{{mail_labels}},
+err:{name:"{{e_name}}",email0:"{{e_email0}}",email1:"{{e_email1}}",in0:"{{e_in0}}",in1:"{{e_in1}}",in2:"{{e_in2}}",out0:"{{e_out0}}",out1:"{{e_out1}}",out2:"{{e_out2}}",adults:"{{e_adults}}",kids:"{{e_kids}}"},
+ok:{t:"{{form_ok_t}}",m:"{{form_ok_m}}",t2:"{{form_ok2_t}}",m2:"{{form_ok2_m}}"}};</script>
+<script src="{{ROOT}}assets/main.js" defer></script>
+</body>
+</html>
