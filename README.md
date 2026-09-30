@@ -14,7 +14,6 @@ src/lang/*.json        testi in it / en / de (stesse chiavi)
 src/assets/            style.css, main.js (identici a Belfiore, più la preselezione della sistemazione nel modulo)
 build.ps1              genera site/ (IT in radice, /en/, /de/)
 serve.ps1              anteprima locale su http://localhost:5173/
-.github/workflows/     deploy su GitHub Pages
 ```
 
 Sezioni della pagina: hero · 4 prove (15 camere, 6 appartamenti, km 0, bistrot) · 4 pannelli a scorrimento
@@ -32,12 +31,12 @@ powershell -ExecutionPolicy Bypass -File serve.ps1
 ```
 
 Parametri di `build.ps1`: `-Site` (URL finale per canonical e hreflang), `-Img` (base delle immagini),
-`-NoIndex` (aggiunge `noindex`, usato dal deploy di anteprima).
+`-NoIndex` (aggiunge `noindex`, per anteprime pubblicate su un indirizzo provvisorio).
 
 ## Deploy
 
-Ogni push su `main` o `sito-nuovo` avvia il workflow che rigenera il sito e lo pubblica su GitHub Pages
-(`https://<utente>.github.io/<repository>/`). L'anteprima è marcata `noindex`.
+Nessun deploy automatico (GitHub Pages non è usato per questo sito). Per l'anteprima si usa `serve.ps1` in locale;
+per la messa online si carica il contenuto di `site/` sull'hosting del dominio.
 
 ## Prima del go-live
 
