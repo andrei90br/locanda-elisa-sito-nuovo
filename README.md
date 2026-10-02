@@ -1,6 +1,7 @@
 # Locanda Elisa — sito nuovo
 
-Landing page statica in tre lingue (italiano, inglese, tedesco) per l'Hotel diffuso Locanda Elisa, Dimaro Folgarida (Val di Sole).
+Landing page statica in tre lingue (italiano, inglese, tedesco) per il Garnì Locanda Elisa, Dimaro Folgarida (Val di Sole).
+La pagina presenta solo il garnì (le camere): appartamenti e bistrot pizzeria sono stati tolti su richiesta.
 Stessa struttura, stesso CSS/JS e stesso processo del sito nuovo dell'Hotel Belfiore (`andrei90br/hotel-belfiore-sito-nuovo`):
 cambiano solo `src/template.html` (sezioni, foto, contatti) e i testi in `src/lang/*.json`.
 Testi e foto sono quelli del sito attuale (locandaelisa.it); il layout segue quello di riferimento di
@@ -11,15 +12,15 @@ atlantis.com/dubai/atlantis-the-royal (solo studio di struttura e misure: non è
 ```
 src/template.html      template unico con segnaposto {{chiave}}
 src/lang/*.json        testi in it / en / de (stesse chiavi)
-src/assets/            style.css, main.js (identici a Belfiore, più la preselezione della sistemazione nel modulo)
+src/assets/            style.css, main.js (come Belfiore, più la preselezione della camera nel modulo e la griglia a 2 card)
 build.ps1              genera site/ (IT in radice, /en/, /de/)
 serve.ps1              anteprima locale su http://localhost:5173/
 .github/workflows/     deploy su GitHub Pages
 ```
 
-Sezioni della pagina: hero · 4 prove (15 camere, 6 appartamenti, km 0, bistrot) · 4 pannelli a scorrimento
-(hotel diffuso, camere, appartamenti, bistrot) · carosello del bistrot (prodotti, bar, giardino, business) ·
-camere e appartamenti (doppia, tripla, appartamenti fino a 4 e fino a 6/7) · FAQ · richiesta di soggiorno.
+Sezioni della pagina: hero · 4 prove (15 camere, 17–23 m², colazione, check-in 14–23) · 3 pannelli a scorrimento
+(il garnì, le camere, dove siamo) · carosello "In camera" (legno, bagno, vista, Wi-Fi e TV) ·
+camere (doppia e tripla) · FAQ · richiesta di soggiorno.
 
 ## Comandi (Windows PowerShell)
 
@@ -43,14 +44,12 @@ Ogni push su `main` o `sito-nuovo` avvia il workflow che rigenera il sito e lo p
 
 - Le foto sono collegate direttamente da locandaelisa.it/wp-content/uploads: vanno scaricate, ottimizzate e servite dal nuovo
   dominio (cambiare `-Img` in `build.ps1`). Le foto sono state scelte dai nomi dei file e dalle pagine in cui compaiono:
-  controllare che ogni immagine corrisponda alla sezione (in particolare hero `132-…`, pannello hotel `180-…`, bistrot `Asporto-…`).
+  controllare che ogni immagine corrisponda alla sezione (in particolare hero `132-…`, pannelli `180-…` e `045-…`, carosello `065/048/050/032-…`).
 - Il modulo di richiesta apre il programma di posta con `mailto:`. Per un invio vero serve un endpoint (es. Formspree).
-  La prenotazione online resta sul motore RoomCloud già in uso (`hotel=16315`).
+  La prenotazione online resta sul motore RoomCloud già in uso (`hotel=16315`): verificare che mostri solo le camere del garnì.
 - Cambiare `-Site` con il dominio definitivo e togliere `-NoIndex`.
 - Confermare con la struttura:
-  - orari del bistrot: la home del sito attuale dice ristorante 12-14 | 18-22:30, pizzeria 18-23; la pagina contatti dice
-    12-22 continuato e pizzeria 15-22:30. Qui sono usati quelli della home.
-  - animali: il sito dice pet-friendly solo per gli appartamenti; per le camere la FAQ rimanda alla richiesta.
+  - la mezza pensione (citata sulla pagina camere del sito attuale): verificare che sia ancora offerta.
   - Wi-Fi: la pagina camere lo indica sia "nelle aree comuni" sia tra i servizi di tutte le camere.
   - la Val di Sole Guest Card non è citata: sul sito attuale le condizioni sono ferme al 2022.
-- Le pagine interne in tedesco per camere e appartamenti non sono state trovate: i link DE puntano alla pagina "Unterkunft".
+- La pagina interna in tedesco per le camere non è stata trovata: i link DE puntano alla pagina "Unterkunft".

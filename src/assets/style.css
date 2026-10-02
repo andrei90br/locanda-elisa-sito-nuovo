@@ -208,6 +208,9 @@ button{font:inherit;letter-spacing:inherit;color:inherit}
 .grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--g);padding:0 var(--mc) var(--sec);background:#fff}
 .grid4 article{display:flex;flex-direction:column}
 .grid4 img{width:100%;aspect-ratio:1;object-fit:cover;margin-bottom:24px}
+/* Variante a 2 card (solo camera doppia e tripla): stesse colonne 1-2 / 3-4 della griglia, foto 4:3 per non superare l'altezza dello schermo. I breakpoint sotto la riportano a 2 e poi 1 colonna */
+.grid4--2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.grid4--2 img{aspect-ratio:4/3}
 /* h4 fluido solo tra 1101 e ~1230px (colonna ~205px; "Standardzimmer" in DE = 225px a 24px); sotto i 1100px torna 24px */
 .grid4 h4{font:400 clamp(20px,1.95vw,24px)/28px var(--disp);text-transform:uppercase;color:var(--ink);margin-bottom:12px}
 .grid4 p{margin-bottom:20px}
