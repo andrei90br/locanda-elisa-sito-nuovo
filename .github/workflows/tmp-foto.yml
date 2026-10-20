@@ -1,0 +1,22 @@
+name: tmp scarica foto per revisione
+on:
+  push:
+    branches: [tmp-vedi-foto]
+jobs:
+  foto:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          mkdir out && cd out
+          B=https://locandaelisa.it/wp-content/uploads
+          for p in 2024/03/132 2024/03/180-Locanda-Elisa-Dic-2023-1 2024/01/066 2024/01/045 2024/01/065 2024/01/048 2024/01/050 2024/01/032 2024/01/072 2024/01/063-Locanda-Elisa-Dic-2023-1 2024/01/076 \
+                   2024/03/182 2024/03/184 2024/03/063 2024/03/057 2024/03/076 2024/03/074 2024/03/065 2024/03/050 2024/03/045 2024/03/134 2024/03/131 2024/03/121 2024/03/161 2024/03/007 2024/03/020 2024/03/084; do
+            case "$p" in *Elisa*) f="$p-jpg.webp";; *) f="$p-Locanda-Elisa-Dic-2023-jpg.webp";; esac
+            n=$(echo "$p" | tr '/' '_' | cut -c1-14)
+            curl -sfL -A "Mozilla/5.0" -o "$n.webp" "$B/$f" || echo "FAIL $f"
+          done
+          ls -la
+      - uses: actions/upload-artifact@v4
+        with:
+          name: foto
+          path: out
