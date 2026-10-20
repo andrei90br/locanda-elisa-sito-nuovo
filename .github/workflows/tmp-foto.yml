@@ -2,6 +2,8 @@ name: tmp scarica foto per revisione
 on:
   push:
     branches: [tmp-vedi-foto]
+permissions:
+  contents: write
 jobs:
   foto:
     runs-on: ubuntu-latest
@@ -16,7 +18,10 @@ jobs:
             curl -sfL -A "Mozilla/5.0" -o "$n.webp" "$B/$f" || echo "FAIL $f"
           done
           ls -la
-      - uses: actions/upload-artifact@v4
+      - uses: actions/checkout@v4
         with:
-          name: foto
-          path: out
+          path: repo
+      - run: |
+          mkdir -p repo/tmpfoto && cp out/*.webp repo/tmpfoto/
+          cd repo && git config user.name tmp && git config user.email tmp@example.com
+          git add tmpfoto && git commit -m "tmp foto [skip ci]" && git push
