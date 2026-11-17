@@ -2,7 +2,7 @@
 # Uso:  powershell -ExecutionPolicy Bypass -File build.ps1
 param(
   # Dominio finale (serve per canonical, hreflang e Open Graph). Da cambiare al go-live.
-  [string]$Site = "https://locandaelisa.it",
+  [string]$Site = "https://garnidellalocanda.it",
   # Base delle immagini. Ora puntano al sito attuale (WordPress); sostituire con "assets/img" dopo aver scaricato/ottimizzato le foto.
   [string]$Img  = "https://locandaelisa.it/wp-content/uploads",
   # Aggiunge <meta name="robots" content="noindex">: da usare per le anteprime (es. GitHub Pages), non per il go-live.
@@ -56,3 +56,18 @@ foreach ($l in $langs) {
   [IO.File]::WriteAllText((Join-Path $target "index.html"), $html, $utf8)
   Write-Host "OK  $($l.code) -> $target\index.html"
 }
+
+# File in radice per il dominio pubblico (non per le anteprime noindex)
+$base = $Site.TrimEnd("/")
+$hostName = ([Uri]$base).Host
+if ($NoIndex) {
+  [IO.File]::WriteAllText((Join-Path $out "robots.txt"), "User-agent: *`nDisallow: /`n", $utf8)
+} else {
+  [IO.File]::WriteAllText((Join-Path $out "robots.txt"), "User-agent: *`nAllow: /`n`nSitemap: $base/sitemap.xml`n", $utf8)
+  $urls = foreach ($l in $langs) { "  <url><loc>$base$($l.path)</loc></url>" }
+  $xml = "<?xml version=`"1.0`" encoding=`"UTF-8`"?>`n<urlset xmlns=`"http://www.sitemaps.org/schemas/sitemap/0.9`">`n" + ($urls -join "`n") + "`n</urlset>`n"
+  [IO.File]::WriteAllText((Join-Path $out "sitemap.xml"), $xml, $utf8)
+  # Dominio personalizzato per GitHub Pages
+  if ($hostName -notlike "*.github.io") { [IO.File]::WriteAllText((Join-Path $out "CNAME"), "$hostName`n", $utf8) }
+}
+Write-Host "OK  robots.txt$(if (-not $NoIndex) { ', sitemap.xml, CNAME' })"

@@ -23,10 +23,8 @@ jobs:
       - name: Genera il sito (IT, EN, DE)
         shell: powershell
         run: |
-          $owner = $env:GITHUB_REPOSITORY_OWNER.ToLower()
-          $repo  = $env:GITHUB_REPOSITORY.Split('/')[1]
-          # Anteprima su github.io: noindex per non duplicare il sito reale dell'hotel sui motori di ricerca.
-          ./build.ps1 -Site "https://$owner.github.io/$repo" -NoIndex
+          # Sito pubblico sul dominio definitivo: indicizzabile, con CNAME, robots.txt e sitemap.xml.
+          ./build.ps1 -Site "https://garnidellalocanda.it"
 
       - uses: actions/configure-pages@v5
 

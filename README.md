@@ -38,7 +38,8 @@ Parametri di `build.ps1`: `-Site` (URL finale per canonical e hreflang), `-Img` 
 ## Deploy
 
 Ogni push su `main` o `sito-nuovo` avvia il workflow che rigenera il sito e lo pubblica su GitHub Pages
-(`https://<utente>.github.io/<repository>/`). L'anteprima è marcata `noindex`.
+sul dominio https://garnidellalocanda.it (DNS su IONOS, file `CNAME` generato dal build). Il sito è indicizzabile:
+`build.ps1` genera anche `robots.txt` e `sitemap.xml`. Per un'anteprima non indicizzata usare `-NoIndex`.
 
 ## Prima del go-live
 
@@ -47,7 +48,6 @@ Ogni push su `main` o `sito-nuovo` avvia il workflow che rigenera il sito e lo p
   controllare che ogni immagine corrisponda alla sezione (in particolare hero `132-…`, pannelli `180-…` e `045-…`, carosello `065/048/050/032-…`).
 - Il modulo di richiesta apre il programma di posta con `mailto:`. Per un invio vero serve un endpoint (es. Formspree).
   La prenotazione online resta sul motore RoomCloud già in uso (`hotel=16315`): verificare che mostri solo le camere del garnì.
-- Cambiare `-Site` con il dominio definitivo e togliere `-NoIndex`.
 - Confermare con la struttura:
   - la mezza pensione (citata sulla pagina camere del sito attuale): verificare che sia ancora offerta.
   - Wi-Fi: la pagina camere lo indica sia "nelle aree comuni" sia tra i servizi di tutte le camere.
