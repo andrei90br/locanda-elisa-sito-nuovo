@@ -6,17 +6,26 @@ param(
   # Base delle immagini. Ora puntano al sito attuale (WordPress); sostituire con "assets/img" dopo aver scaricato/ottimizzato le foto.
   [string]$Img  = "https://locandaelisa.it/wp-content/uploads",
   # Aggiunge <meta name="robots" content="noindex">: da usare per le anteprime (es. GitHub Pages), non per il go-live.
-  [switch]$NoIndex
+  [switch]$NoIndex,
+  # Pagina "il nuovo sito è in arrivo" in radice; il sito completo va in /anteprima/ (noindex) finché non è pronto.
+  [switch]$ComingSoon
 )
 $ErrorActionPreference = "Stop"
 $root = $PSScriptRoot
-$out  = Join-Path $root "site"
+$siteRoot = Join-Path $root "site"
+$out  = $siteRoot
+$publicSite = $Site.TrimEnd("/")
+if ($ComingSoon) {
+  $out = Join-Path $siteRoot "anteprima"
+  $Site = "$publicSite/anteprima"
+  $NoIndex = $true
+}
 $utf8 = New-Object System.Text.UTF8Encoding($false)
 
 $tpl = [IO.File]::ReadAllText((Join-Path $root "src\template.html"), $utf8)
 
-if (Test-Path $out) { Remove-Item $out -Recurse -Force }
-New-Item -ItemType Directory -Path $out | Out-Null
+if (Test-Path $siteRoot) { Remove-Item $siteRoot -Recurse -Force }
+New-Item -ItemType Directory -Path $out -Force | Out-Null
 Copy-Item (Join-Path $root "src\assets") (Join-Path $out "assets") -Recurse
 
 $langs = @(
@@ -57,17 +66,25 @@ foreach ($l in $langs) {
   Write-Host "OK  $($l.code) -> $target\index.html"
 }
 
-# File in radice per il dominio pubblico (non per le anteprime noindex)
-$base = $Site.TrimEnd("/")
+# File in radice per il dominio pubblico
+$base = $publicSite
 $hostName = ([Uri]$base).Host
-if ($NoIndex) {
-  [IO.File]::WriteAllText((Join-Path $out "robots.txt"), "User-agent: *`nDisallow: /`n", $utf8)
+if ($ComingSoon) {
+  Copy-Item (Join-Path $root "src\coming-soon.html") (Join-Path $siteRoot "index.html")
+  New-Item -ItemType Directory -Path (Join-Path $siteRoot "assets") -Force | Out-Null
+  Copy-Item (Join-Path $root "src\assets\logo.svg") (Join-Path $siteRoot "assets\logo.svg")
+  Write-Host "OK  avviso in radice, sito completo in /anteprima/"
+}
+if ($NoIndex -and -not $ComingSoon) {
+  [IO.File]::WriteAllText((Join-Path $siteRoot "robots.txt"), "User-agent: *`nDisallow: /`n", $utf8)
+} elseif ($ComingSoon) {
+  [IO.File]::WriteAllText((Join-Path $siteRoot "robots.txt"), "User-agent: *`nDisallow: /anteprima/`n", $utf8)
 } else {
-  [IO.File]::WriteAllText((Join-Path $out "robots.txt"), "User-agent: *`nAllow: /`n`nSitemap: $base/sitemap.xml`n", $utf8)
+  [IO.File]::WriteAllText((Join-Path $siteRoot "robots.txt"), "User-agent: *`nAllow: /`n`nSitemap: $base/sitemap.xml`n", $utf8)
   $urls = foreach ($l in $langs) { "  <url><loc>$base$($l.path)</loc></url>" }
   $xml = "<?xml version=`"1.0`" encoding=`"UTF-8`"?>`n<urlset xmlns=`"http://www.sitemaps.org/schemas/sitemap/0.9`">`n" + ($urls -join "`n") + "`n</urlset>`n"
-  [IO.File]::WriteAllText((Join-Path $out "sitemap.xml"), $xml, $utf8)
-  # Dominio personalizzato per GitHub Pages
-  if ($hostName -notlike "*.github.io") { [IO.File]::WriteAllText((Join-Path $out "CNAME"), "$hostName`n", $utf8) }
+  [IO.File]::WriteAllText((Join-Path $siteRoot "sitemap.xml"), $xml, $utf8)
 }
-Write-Host "OK  robots.txt$(if (-not $NoIndex) { ', sitemap.xml, CNAME' })"
+# Dominio personalizzato per GitHub Pages
+if ($hostName -notlike "*.github.io") { [IO.File]::WriteAllText((Join-Path $siteRoot "CNAME"), "$hostName`n", $utf8) }
+Write-Host "OK  robots.txt e CNAME"

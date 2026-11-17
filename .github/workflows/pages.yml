@@ -23,8 +23,9 @@ jobs:
       - name: Genera il sito (IT, EN, DE)
         shell: powershell
         run: |
-          # Sito pubblico sul dominio definitivo: indicizzabile, con CNAME, robots.txt e sitemap.xml.
-          ./build.ps1 -Site "https://garnidellalocanda.it"
+          # Per ora: avviso "il nuovo sito è in arrivo" in radice, sito completo in /anteprima/ (noindex).
+          # Al go-live togliere -ComingSoon: il sito torna in radice, indicizzabile, con sitemap.xml.
+          ./build.ps1 -Site "https://garnidellalocanda.it" -ComingSoon
 
       - uses: actions/configure-pages@v5
 

@@ -41,6 +41,9 @@ Ogni push su `main` o `sito-nuovo` avvia il workflow che rigenera il sito e lo p
 sul dominio https://garnidellalocanda.it (DNS su IONOS, file `CNAME` generato dal build). Il sito è indicizzabile:
 `build.ps1` genera anche `robots.txt` e `sitemap.xml`. Per un'anteprima non indicizzata usare `-NoIndex`.
 
+Per ora il workflow usa `-ComingSoon`: in radice c'è l'avviso "il nuovo sito è in arrivo" (`src/coming-soon.html`)
+e il sito completo è in `/anteprima/` (noindex). Al go-live basta togliere `-ComingSoon` da `.github/workflows/pages.yml`.
+
 ## Prima del go-live
 
 - Le foto sono collegate direttamente da locandaelisa.it/wp-content/uploads: vanno scaricate, ottimizzate e servite dal nuovo
