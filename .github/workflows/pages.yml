@@ -16,16 +16,21 @@ concurrency:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # Per ora: avviso "il nuovo sito è in arrivo" in radice, sito completo in /anteprima/ (noindex).
+      # Al go-live togliere COMING_SOON: il sito torna in radice, indicizzabile, con sitemap.xml.
       - name: Genera il sito (IT, EN, DE)
-        shell: powershell
-        run: |
-          # Per ora: avviso "il nuovo sito è in arrivo" in radice, sito completo in /anteprima/ (noindex).
-          # Al go-live togliere -ComingSoon: il sito torna in radice, indicizzabile, con sitemap.xml.
-          ./build.ps1 -Site "https://garnidellalocanda.it" -ComingSoon
+        run: node build.mjs
+        env:
+          SITE: https://garnidellalocanda.it
+          COMING_SOON: "1"
 
       - uses: actions/configure-pages@v5
 

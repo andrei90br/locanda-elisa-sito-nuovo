@@ -34,6 +34,7 @@
     txts[cur].setAttribute("aria-current", "true"); panelTab(cur, true);
   }
   function storyScroll() {
+    if (!story || !bgs.length) return;
     var r = story.getBoundingClientRect(), range = story.offsetHeight - window.innerHeight;
     if (range <= 0) return;
     var p = Math.min(1, Math.max(0, -r.top / range));
@@ -45,8 +46,8 @@
   var sticky = $("#sticky"), heroEl = $("#top"), finEl = $("#richiesta"), prim = $$("main .btn-f");
   function stickyBar() {
     if (!sticky) return;
-    var past = heroEl.getBoundingClientRect().bottom < 0;
-    var fr = finEl.getBoundingClientRect(), inFin = fr.top < window.innerHeight * 0.85 && fr.bottom > 0;
+    var past = heroEl ? heroEl.getBoundingClientRect().bottom < 0 : window.scrollY > 400;
+    var fr = finEl ? finEl.getBoundingClientRect() : null, inFin = !!fr && fr.top < window.innerHeight * 0.85 && fr.bottom > 0;
     var limit = window.innerHeight - sticky.offsetHeight;
     var busy = prim.some(function (b) { var r = b.getBoundingClientRect(); return r.bottom > 0 && r.top < limit; });
     sticky.classList.toggle("is-on", past && !inFin && !busy);
@@ -119,6 +120,7 @@
   /* Carosello "Offerte": nessun avanzamento automatico; frecce a fine corsa attenuate (aria-disabled, il focus non si perde) */
   /* (la variabile si chiama rail e non track: track() è la funzione di misurazione qui sopra; con lo stesso nome la sovrascriveva e ogni
      clic su [data-cta] e ogni invio valido del modulo lanciavano "track is not a function" prima di aprire il programma di posta) */
+  if ($("#track")) (function () {
   var rail = $("#track"), bar = $("#bar"), prev = $("#prev"), next = $("#next");
   function pitch() { var c = $(".scard", rail); return c ? c.getBoundingClientRect().width + parseFloat(getComputedStyle(rail).columnGap || 40) : 392; }
   function updBar() {
@@ -146,9 +148,10 @@
     if (e.key === "ArrowLeft") { e.preventDefault(); prev.click(); }
   });
   updBar();
+  })();
 
   /* Reveal */
-  var items = $$(".spot__l, .scard, .stay__c, .grid4 article, .proof div, .faq__l, .faq__r, .fin__c, .ft__main");
+  var items = $$(".spot__l, .scard, .stay__c, .grid4 article, .proof div, .faq__l, .faq__r, .fin__c, .ft__main, .txt__l, .txt__r, .gal img, .more");
   items.forEach(function (el) { el.classList.add("rv"); });
   if ("IntersectionObserver" in window) {
     var io = new IntersectionObserver(function (entries) {

@@ -1,4 +1,4 @@
-# Output generato da build.ps1 (lo ricrea il workflow di deploy)
+# Output generato da build.mjs (lo ricrea il workflow di deploy)
 site/
 
 # Configurazione locale dell'ambiente di lavoro

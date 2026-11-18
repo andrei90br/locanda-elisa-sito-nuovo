@@ -1,0 +1,35 @@
+<section class="hero hero--page" id="top" data-theme="dark">
+  <img class="hero__bg" src="{{ROOT}}assets/img/ingresso-garni.webp" style="object-position:50% 25%" alt="{{hero_alt}}" fetchpriority="high" decoding="async">
+  <div class="hero__shade"></div>
+  <div class="hero__c">
+    <span class="eyebrow">{{m_contact}}</span>
+    <h1>{{con_h1}}</h1>
+    <p class="hero__sub">{{con_sub}}</p>
+    <div class="hero__cta">
+      <button class="btn-f" data-open="req" data-cta="contact_hero">{{hero_cta}}</button>
+      <a class="lnk lnk--w" href="tel:+393773591831" data-cta="contact_tel">{{hero_tel}}</a>
+    </div>
+  </div>
+</section>
+
+<section class="proof proof--3" data-theme="light" aria-label="{{m_contact}}">
+  <div><b>{{con_addr}}</b><span>Piazza Centrale, 11<br>38025 Dimaro Folgarida (TN)</span><a class="lnk" href="{{MAPS}}" target="_blank" rel="noopener" data-cta="contact_maps">{{vds_maps}}<span class="sr"> ({{newtab}})</span></a></div>
+  <div><b>{{con_tel}}</b><span><a href="tel:+393773591831" data-cta="contact_tel2">+39 377 3591831</a></span></div>
+  <div><b>Email</b><span><a href="mailto:info@locandaelisa.it" data-cta="contact_mail">info@locandaelisa.it</a></span></div>
+</section>
+
+<section class="faq" id="faq" data-theme="light">
+  <div class="faq__l">
+    <span class="eyebrow eyebrow--dk">{{faq_e}}</span>
+    <h3>{{faq_h}}</h3>
+  </div>
+  <div class="faq__r">
+    <details><summary>{{faq1_q}}</summary><p>{{faq1_a}}</p></details>
+    <details><summary>{{faq2_q}}</summary><p>{{faq2_a}}</p></details>
+    <details><summary>{{faq3_q}}</summary><p>{{faq3_a}}</p></details>
+    <details><summary>{{faq4_q}}</summary><p>{{faq4_a}}</p></details>
+    <details><summary>{{faq5_q}}</summary><p>{{faq5_a}}</p></details>
+    <details><summary>{{faq6_q}}</summary><p>{{faq6_a}}</p></details>
+  </div>
+</section>
+{{FIN}}

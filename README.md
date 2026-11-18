@@ -9,45 +9,46 @@ atlantis.com/dubai/atlantis-the-royal (solo studio di struttura e misure: non è
 
 ## Struttura
 
+Sito su più pagine, in italiano (radice), inglese (`/en/`) e tedesco (`/de/`), con gli stessi percorsi in tutte le lingue:
+
 ```
-src/template.html      template unico con segnaposto {{chiave}}
+/                 home
+/camere/          le camere
+/camere/doppia/   camera doppia
+/camere/tripla/   camera tripla
+/colazione/       colazione
+/val-di-sole/     dove siamo
+/contatti/        contatti e domande frequenti
+```
+
+```
+src/layout.html        parti comuni (head, header, menu, footer, modulo di richiesta)
+src/pages/*.html       contenuto di ogni pagina ({{FIN}} = sezione finale di richiesta, src/fin.html)
 src/lang/*.json        testi in it / en / de (stesse chiavi)
-src/assets/            style.css, main.js (come Belfiore, più la preselezione della camera nel modulo e la griglia a 2 card)
-build.ps1              genera site/ (IT in radice, /en/, /de/)
+src/assets/            style.css, main.js, img/ (foto proprie), logo.svg
+src/coming-soon.html   avviso "il nuovo sito è in arrivo"
+build.mjs              genera site/ (camere e pagine sono elencate in cima al file)
 serve.ps1              anteprima locale su http://localhost:5173/
-.github/workflows/     deploy su GitHub Pages
 ```
 
-Sezioni della pagina: hero · 4 prove (15 camere, 17–23 m², colazione, check-in 14–23) · 3 pannelli a scorrimento
-(il garnì, le camere, dove siamo) · carosello "In camera" (legno, bagno, vista, Wi-Fi e TV) ·
-camere (doppia e tripla) · FAQ · richiesta di soggiorno.
+## Comandi
 
-## Comandi (Windows PowerShell)
-
-```powershell
-# genera il sito
-powershell -ExecutionPolicy Bypass -File build.ps1
-
-# anteprima locale
-powershell -ExecutionPolicy Bypass -File serve.ps1
 ```
-
-Parametri di `build.ps1`: `-Site` (URL finale per canonical e hreflang), `-Img` (base delle immagini),
-`-NoIndex` (aggiunge `noindex`, usato dal deploy di anteprima).
+node build.mjs                    # sito completo in site/
+COMING_SOON=1 node build.mjs      # avviso in radice, sito in site/anteprima/
+```
 
 ## Deploy
 
-Ogni push su `main` o `sito-nuovo` avvia il workflow che rigenera il sito e lo pubblica su GitHub Pages
-sul dominio https://garnidellalocanda.it (DNS su IONOS, file `CNAME` generato dal build). Il sito è indicizzabile:
-`build.ps1` genera anche `robots.txt` e `sitemap.xml`. Per un'anteprima non indicizzata usare `-NoIndex`.
-
-Per ora il workflow usa `-ComingSoon`: in radice c'è l'avviso "il nuovo sito è in arrivo" (`src/coming-soon.html`)
-e il sito completo è in `/anteprima/` (noindex). Al go-live basta togliere `-ComingSoon` da `.github/workflows/pages.yml`.
+Ogni push su `main` avvia il workflow che rigenera il sito e lo pubblica su GitHub Pages sul dominio
+https://garnidellalocanda.it (DNS su IONOS, file `CNAME` generato dal build).
+Per ora il workflow usa `COMING_SOON=1`: in radice c'è l'avviso e il sito completo è in `/anteprima/` (noindex).
+Al go-live basta togliere `COMING_SOON` da `.github/workflows/pages.yml`: il sito torna in radice, indicizzabile, con `sitemap.xml`.
 
 ## Prima del go-live
 
 - Le foto sono collegate direttamente da locandaelisa.it/wp-content/uploads: vanno scaricate, ottimizzate e servite dal nuovo
-  dominio (cambiare `-Img` in `build.ps1`). Le foto sono state scelte dai nomi dei file e dalle pagine in cui compaiono:
+  dominio (cambiare `IMG` in `build.mjs`). Le foto sono state scelte dai nomi dei file e dalle pagine in cui compaiono:
   controllare che ogni immagine corrisponda alla sezione (in particolare hero `132-…`, pannelli `180-…` e `045-…`, carosello `065/048/050/032-…`).
 - Il modulo di richiesta apre il programma di posta con `mailto:`. Per un invio vero serve un endpoint (es. Formspree).
   La prenotazione online resta sul motore RoomCloud già in uso (`hotel=16315`): verificare che mostri solo le camere del garnì.
