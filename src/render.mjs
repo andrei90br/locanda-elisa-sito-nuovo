@@ -174,7 +174,7 @@ function roomCard(c, r) {
           <a class="apt-media" href="${roomHref(c, r)}"><img src="${r.photos[0]}" alt="${e(rt.name)}" loading="lazy"></a>
           <div class="apt-body">
             <h3><a href="${roomHref(c, r)}">${e(rt.name)}</a></h3>
-            <p class="apt-meta">${r.size} m² · ${e(fill(t.common.guests, { n: r.beds }))}</p>
+            <p class="apt-meta">${r.size ? `${r.size} m² · ` : ''}${e(fill(t.common.guests, { n: r.beds }))}</p>
             <p>${e(rt.beds)}</p>
             <div class="apt-actions">
               <a class="btn btn-accent btn-sm" href="${requestHref(c, r)}">${e(t.common.request)}</a>
@@ -363,7 +363,7 @@ export function room(c, r) {
       <div class="wrap hero-inner">
         <p class="eyebrow">${e(p.eyebrow)}</p>
         <h1>${e(rt.name)}</h1>
-        <p class="lead">${r.size} m² · ${e(fill(t.common.guests, { n: r.beds }))}</p>
+        <p class="lead">${r.size ? `${r.size} m² · ` : ''}${e(fill(t.common.guests, { n: r.beds }))}</p>
       </div>
     </section>
 
@@ -377,8 +377,7 @@ export function room(c, r) {
         <aside class="info-card">
           <h3>${e(p.factsTitle)}</h3>
           <dl class="facts">
-            <div><dt>${e(p.size)}</dt><dd>${r.size} m²</dd></div>
-            <div><dt>${e(p.guests)}</dt><dd>${r.beds}</dd></div>
+${r.size ? `            <div><dt>${e(p.size)}</dt><dd>${r.size} m²</dd></div>\n` : ''}            <div><dt>${e(p.guests)}</dt><dd>${r.beds}</dd></div>
             <div><dt>${e(p.beds)}</dt><dd>${e(rt.beds)}</dd></div>
           </dl>
           <ul class="checklist">${t.rooms.good.map((s) => `<li>${e(s)}</li>`).join('')}</ul>
@@ -405,7 +404,7 @@ export function room(c, r) {
       </div>
     </section>
     <dialog class="lightbox" data-lightbox-dialog><img alt=""><button type="button" aria-label="×" data-close>×</button></dialog>`;
-  return layout(c, { title: fill(p.metaTitle, vars), description: fill(p.metaDescription, vars), image: r.photos[0], body });
+  return layout(c, { title: fill(r.size ? p.metaTitle : p.metaTitleNoSize, vars), description: fill(r.size ? p.metaDescription : p.metaDescriptionNoSize, vars), image: r.photos[0], body });
 }
 
 export function bar(c) {

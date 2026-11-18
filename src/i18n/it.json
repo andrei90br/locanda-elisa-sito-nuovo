@@ -42,17 +42,17 @@
   "home": {
     "meta": {
       "title": "Garnì della Locanda | Camere con colazione a Dimaro Folgarida, Val di Sole",
-      "description": "Garnì in Piazza Centrale a Dimaro Folgarida, Val di Sole: 15 camere doppie e triple con bagno privato, colazione e il bar Bottega Moderna, aperto anche al pubblico."
+      "description": "Garnì in Piazza Centrale a Dimaro Folgarida, Val di Sole: 15 camere doppie, triple e quadruple con bagno privato, colazione e il bar Bottega Moderna, aperto anche al pubblico."
     },
     "hero": {
       "eyebrow": "Dimaro Folgarida · Val di Sole · Trentino",
       "title": "In centro a Dimaro, a 5 minuti dalle piste da sci.",
-      "lead": "15 camere doppie e triple con bagno privato in Piazza Centrale a Dimaro Folgarida: lo skibus ti porta sulle piste in 5 minuti. Colazione e il nostro bar Bottega Moderna al piano terra."
+      "lead": "15 camere doppie, triple e quadruple con bagno privato in Piazza Centrale a Dimaro Folgarida: lo skibus ti porta sulle piste in 5 minuti. Colazione e il nostro bar Bottega Moderna al piano terra."
     },
     "proof": [
       {
         "title": "15 camere",
-        "text": "Doppie e triple, tutte con bagno privato"
+        "text": "Doppie, triple e quadruple, tutte con bagno privato"
       },
       {
         "title": "Le piste a 5 minuti",
@@ -75,7 +75,7 @@
     "stay": {
       "eyebrow": "Le camere",
       "title": "Semplicità e legno, tipicamente trentini.",
-      "text": "Camere doppie e triple da 17 a 23 m², con travi a vista e mobili in legno, bagno privato con vasca o doccia, TV e Wi-Fi. Pernottamento con colazione o mezza pensione.",
+      "text": "Camere doppie, triple e quadruple, con travi a vista e mobili in legno, bagno privato con vasca o doccia, TV e Wi-Fi. Pernottamento con colazione o mezza pensione.",
       "cta": "Scopri le camere"
     },
     "breakfast": {
@@ -110,17 +110,17 @@
   },
   "rooms": {
     "meta": {
-      "title": "Camere doppie e triple a Dimaro Folgarida, Val di Sole | Garnì della Locanda",
-      "description": "15 camere doppie e triple da 17 a 23 m² con bagno privato, travi a vista, TV e Wi-Fi a Dimaro Folgarida. Colazione o mezza pensione."
+      "title": "Camere doppie, triple e quadruple a Dimaro Folgarida, Val di Sole | Garnì della Locanda",
+      "description": "15 camere doppie, triple e quadruple con bagno privato, travi a vista, TV e Wi-Fi a Dimaro Folgarida. Colazione o mezza pensione."
     },
     "hero": {
       "eyebrow": "Le camere",
       "title": "Il tuo rifugio in Val di Sole.",
-      "lead": "15 camere doppie e triple, arredate con gusto e attenzione ai dettagli. Tutte con bagno privato, TV e Wi-Fi."
+      "lead": "15 camere doppie, triple e quadruple, arredate con gusto e attenzione ai dettagli. Tutte con bagno privato, TV e Wi-Fi."
     },
     "intro": {
       "title": "Scegli la tua camera",
-      "text": "Camere doppie da 17 m² per due persone e camere triple da 23 m² per famiglie e piccoli gruppi. Stessa cura, stessi servizi, in piazza a Dimaro."
+      "text": "Camere doppie da 17 m² per due persone, triple da 23 m² e quadruple con letto a castello per famiglie e gruppi. Stessa cura, stessi servizi, in piazza a Dimaro."
     },
     "types": {
       "double": {
@@ -132,6 +132,11 @@
         "name": "Camera Tripla",
         "beds": "1 letto matrimoniale e 1 letto singolo",
         "text": "Più spazio per tre: 23 m² con letto matrimoniale e letto singolo, travi a vista e mobili in legno. Bagno privato con vasca o doccia, TV e Wi-Fi, ideale per famiglie e piccoli gruppi."
+      },
+      "quad": {
+        "name": "Camera Quadrupla",
+        "beds": "1 letto matrimoniale e 1 letto a castello",
+        "text": "La camera per quattro: letto matrimoniale e letto a castello, travi a vista e mobili in legno. Bagno privato con vasca o doccia, TV e Wi-Fi, ideale per famiglie con bambini e gruppi di amici."
       }
     },
     "servicesTitle": "In tutte le camere",
@@ -162,7 +167,9 @@
     "gallery": "Galleria fotografica",
     "cta": "Richiedi questa camera",
     "others": "Guarda anche",
-    "photo": "Foto {n} della {name}"
+    "photo": "Foto {n} della {name}",
+    "metaTitleNoSize": "{name} · {guests} ospiti | Garnì della Locanda, Dimaro Folgarida",
+    "metaDescriptionNoSize": "{name} a Dimaro Folgarida: {beds}, bagno privato, TV e Wi-Fi. Colazione o mezza pensione."
   },
   "breakfast": {
     "manifesto": {

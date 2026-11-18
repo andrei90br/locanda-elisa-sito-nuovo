@@ -32,6 +32,9 @@ export const ROOMS = [
     photos: [OLD + '2024/01/063-Locanda-Elisa-Dic-2023-1-jpg.webp', OLD + '2024/01/065-Locanda-Elisa-Dic-2023-jpg.webp', OLD + '2024/03/074-Locanda-Elisa-Dic-2023-jpg.webp', OLD + '2024/01/066-Locanda-Elisa-Dic-2023-jpg.webp'] },
   { slug: 'tripla', key: 'triple', size: 23, beds: 3,
     photos: [OLD + '2024/03/057-Locanda-Elisa-Dic-2023-jpg.webp', OLD + '2024/01/072-Locanda-Elisa-Dic-2023-jpg.webp', OLD + '2024/03/074-Locanda-Elisa-Dic-2023-jpg.webp', OLD + '2024/01/076-Locanda-Elisa-Dic-2023-jpg.webp'] },
+  // Quadrupla: superficie da confermare (size: null = non mostrata); foto provvisorie, in attesa di quelle della camera
+  { slug: 'quadrupla', key: 'quad', size: null, beds: 4,
+    photos: [OLD + '2024/01/066-Locanda-Elisa-Dic-2023-jpg.webp', OLD + '2024/01/065-Locanda-Elisa-Dic-2023-jpg.webp', OLD + '2024/03/074-Locanda-Elisa-Dic-2023-jpg.webp', OLD + '2024/01/076-Locanda-Elisa-Dic-2023-jpg.webp'] },
 ];
 
 // Orari del bar Bottega Moderna (tutti i giorni, aperto anche al pubblico)

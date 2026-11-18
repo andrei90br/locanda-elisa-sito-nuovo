@@ -42,17 +42,17 @@
   "home": {
     "meta": {
       "title": "Garnì della Locanda | B&B rooms in Dimaro Folgarida, Val di Sole",
-      "description": "Garnì on the main square of Dimaro Folgarida, Val di Sole: 15 double and triple rooms with private bathroom, breakfast and the Bottega Moderna bar, open to the public."
+      "description": "Garnì on the main square of Dimaro Folgarida, Val di Sole: 15 double, triple and quadruple rooms with private bathroom, breakfast and the Bottega Moderna bar, open to the public."
     },
     "hero": {
       "eyebrow": "Dimaro Folgarida · Val di Sole · Trentino",
       "title": "In the centre of Dimaro, 5 minutes from the ski slopes.",
-      "lead": "15 double and triple rooms with private bathroom on Piazza Centrale in Dimaro Folgarida: the ski bus takes you to the slopes in 5 minutes. Breakfast and our Bottega Moderna bar on the ground floor."
+      "lead": "15 double, triple and quadruple rooms with private bathroom on Piazza Centrale in Dimaro Folgarida: the ski bus takes you to the slopes in 5 minutes. Breakfast and our Bottega Moderna bar on the ground floor."
     },
     "proof": [
       {
         "title": "15 rooms",
-        "text": "Doubles and triples, all with private bathroom"
+        "text": "Doubles, triples and quads, all with private bathroom"
       },
       {
         "title": "Slopes in 5 minutes",
@@ -75,7 +75,7 @@
     "stay": {
       "eyebrow": "The rooms",
       "title": "Simple and wooden, the Trentino way.",
-      "text": "Double and triple rooms from 17 to 23 m², with exposed beams and wooden furniture, private bathroom with bath or shower, TV and Wi-Fi. Bed and breakfast or half board.",
+      "text": "Double, triple and quadruple rooms with exposed beams and wooden furniture, private bathroom with bath or shower, TV and Wi-Fi. Bed and breakfast or half board.",
       "cta": "Discover the rooms"
     },
     "breakfast": {
@@ -110,17 +110,17 @@
   },
   "rooms": {
     "meta": {
-      "title": "Double and triple rooms in Dimaro Folgarida, Val di Sole | Garnì della Locanda",
-      "description": "15 double and triple rooms from 17 to 23 m² with private bathroom, exposed beams, TV and Wi-Fi in Dimaro Folgarida. Breakfast or half board."
+      "title": "Double, triple and quadruple rooms in Dimaro Folgarida, Val di Sole | Garnì della Locanda",
+      "description": "15 double, triple and quadruple rooms with private bathroom, exposed beams, TV and Wi-Fi in Dimaro Folgarida. Breakfast or half board."
     },
     "hero": {
       "eyebrow": "The rooms",
       "title": "Your retreat in Val di Sole.",
-      "lead": "15 double and triple rooms, tastefully furnished with attention to detail. All with private bathroom, TV and Wi-Fi."
+      "lead": "15 double, triple and quadruple rooms, tastefully furnished with attention to detail. All with private bathroom, TV and Wi-Fi."
     },
     "intro": {
       "title": "Choose your room",
-      "text": "17 m² doubles for two and 23 m² triples for families and small groups. Same care, same services, on Dimaro's square."
+      "text": "17 m² doubles for two, 23 m² triples and quadruples with a bunk bed for families and groups. Same care, same services, on Dimaro's square."
     },
     "types": {
       "double": {
@@ -132,6 +132,11 @@
         "name": "Triple Room",
         "beds": "1 double bed and 1 single bed",
         "text": "More space for three: 23 m² with a double bed and a single bed, exposed beams and wooden furniture. Private bathroom with bath or shower, TV and Wi-Fi, ideal for families and small groups."
+      },
+      "quad": {
+        "name": "Quadruple Room",
+        "beds": "1 double bed and 1 bunk bed",
+        "text": "The room for four: a double bed and a bunk bed, exposed beams and wooden furniture. Private bathroom with bath or shower, TV and Wi-Fi, ideal for families with children and groups of friends."
       }
     },
     "servicesTitle": "In every room",
@@ -162,7 +167,9 @@
     "gallery": "Photo gallery",
     "cta": "Enquire about this room",
     "others": "See also",
-    "photo": "{name}, photo {n}"
+    "photo": "{name}, photo {n}",
+    "metaTitleNoSize": "{name} · {guests} guests | Garnì della Locanda, Dimaro Folgarida",
+    "metaDescriptionNoSize": "{name} in Dimaro Folgarida: {beds}, private bathroom, TV and Wi-Fi. Breakfast or half board."
   },
   "breakfast": {
     "manifesto": {
