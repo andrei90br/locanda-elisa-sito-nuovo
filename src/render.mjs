@@ -409,7 +409,7 @@ ${r.size ? `            <div><dt>${e(p.size)}</dt><dd>${r.size} m²</dd></div>\n
 
 export function bar(c) {
   const t = c.t, b = t.bar;
-  const body = `${pageHero(c, b.hero, IMG.bar, 'center 30%')}
+  const body = `${pageHero(c, b.hero, IMG.bar, 'center calc(20px - 52.4vw)').replace('hero hero-page"', 'hero hero-page hero-bar"')}
 
     <section class="section">
       <div class="wrap narrow center">

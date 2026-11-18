@@ -95,11 +95,9 @@ address { font-style: normal; margin: 0 0 1.2em; }
 .hero .eyebrow { color: #e7caa2; }
 .hero-home { min-height: min(86vh, 820px); }
 .hero-home .hero-inner { padding-bottom: 130px; }
-/* Home: l'insegna della foto resta sopra il testo (foto verticale, insegna al 19-39% dell'altezza) */
-@media (min-width: 761px) { .hero-home { min-height: max(min(86vh, 820px), calc(33vw + 590px)); background-position: center calc(96px - 25.3vw); } }
-@media (max-width: 760px) { .hero-home { min-height: 900px; } }
-@media (max-width: 400px) { .hero-home { min-height: 940px; } }
 .hero-page { min-height: 60vh; }
+.hero-bar { min-height: max(60vh, calc(9.8vw + 390px)); } /* spazio per l'insegna "Bottega Moderna" sopra il testo */
+.feature-media img[src$="colazione-croissant.webp"] { object-position: center 100%; } /* brioche al centro dell'inquadratura */
 .hero-page:has(+ .booking-bar) .hero-inner { padding-bottom: 120px; }
 
 /* Avviso nuova gestione */
