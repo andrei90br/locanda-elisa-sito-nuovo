@@ -38,6 +38,7 @@ const PAGES = [
   { path: 'camere/', file: 'camere', title: 'cam_title', desc: 'cam_desc', cur: 'camere', og: 'ingresso-garni.webp', crumb: 'm_rooms' },
   ...ROOMS.map((r) => ({ path: `camere/${r.slug}/`, file: 'camera', title: `${r.key}_title`, desc: `${r.key}_desc`, cur: 'camere', og: 'ingresso-garni.webp', room: r, crumb: 'm_rooms', crumb2: r.n === 1 ? 'g1_h' : 'g2_h' })),
   { path: 'colazione/', file: 'colazione', title: 'col_title', desc: 'col_desc', cur: 'colazione', og: 'sala-colazione.webp', crumb: 'm_breakfast' },
+  { path: 'bar/', file: 'bar', title: 'bar_title', desc: 'bar_desc', cur: 'bar', og: 'colazione-croissant.webp', crumb: 'm_bar' },
   { path: 'val-di-sole/', file: 'val-di-sole', title: 'vds_title', desc: 'vds_desc', cur: 'val', og: 'ingresso-garni.webp', crumb: 'm_valdisole' },
   { path: 'contatti/', file: 'contatti', title: 'con_title', desc: 'con_desc', cur: 'contatti', og: 'ingresso-garni.webp', crumb: 'm_contact' },
 ];
@@ -68,7 +69,7 @@ for (const l of LANGS) {
       ROOT_IT: ROOT + p.path || './', ROOT_EN: ROOT + 'en/' + p.path, ROOT_DE: ROOT + 'de/' + p.path,
     });
     for (const c of ['it', 'en', 'de']) m[`cur_${c}`] = c === l.code ? 'aria-current="true"' : '';
-    for (const c of ['home', 'camere', 'colazione', 'val', 'contatti']) m[`cur_${c}`] = c === p.cur ? 'aria-current="page"' : '';
+    for (const c of ['home', 'camere', 'colazione', 'bar', 'val', 'contatti']) m[`cur_${c}`] = c === p.cur ? 'aria-current="page"' : '';
     // Briciole di pane
     const sep = '<i></i>';
     let crumb = p.crumb ? `<a href="${HOME}">${t.cr_home}</a>` : `<span aria-current="page">${t.cr_home}</span>`;

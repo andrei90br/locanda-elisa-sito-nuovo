@@ -17,6 +17,7 @@ Sito su più pagine, in italiano (radice), inglese (`/en/`) e tedesco (`/de/`), 
 /camere/doppia/   camera doppia
 /camere/tripla/   camera tripla
 /colazione/       colazione
+/bar/             bar (aperto anche al pubblico)
 /val-di-sole/     dove siamo
 /contatti/        contatti e domande frequenti
 ```
