@@ -38,7 +38,7 @@ const PAGES = [
   { path: 'camere/', file: 'camere', title: 'cam_title', desc: 'cam_desc', cur: 'camere', og: 'ingresso-garni.webp', crumb: 'm_rooms' },
   ...ROOMS.map((r) => ({ path: `camere/${r.slug}/`, file: 'camera', title: `${r.key}_title`, desc: `${r.key}_desc`, cur: 'camere', og: 'ingresso-garni.webp', room: r, crumb: 'm_rooms', crumb2: r.n === 1 ? 'g1_h' : 'g2_h' })),
   { path: 'colazione/', file: 'colazione', title: 'col_title', desc: 'col_desc', cur: 'colazione', og: 'sala-colazione.webp', crumb: 'm_breakfast' },
-  { path: 'bar/', file: 'bar', title: 'bar_title', desc: 'bar_desc', cur: 'bar', og: 'colazione-croissant.webp', crumb: 'm_bar' },
+  { path: 'bar/', file: 'bar', title: 'bar_title', desc: 'bar_desc', cur: 'bar', og: 'ingresso-bottega-moderna.webp', crumb: 'm_bar' },
   { path: 'val-di-sole/', file: 'val-di-sole', title: 'vds_title', desc: 'vds_desc', cur: 'val', og: 'ingresso-garni.webp', crumb: 'm_valdisole' },
   { path: 'contatti/', file: 'contatti', title: 'con_title', desc: 'con_desc', cur: 'contatti', og: 'ingresso-garni.webp', crumb: 'm_contact' },
 ];
