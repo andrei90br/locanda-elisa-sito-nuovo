@@ -50,10 +50,22 @@
       "lead": "15 camere doppie e triple con bagno privato, la colazione e il nostro bar Bottega Moderna, nel centro di Dimaro Folgarida, a pochi minuti da Madonna di Campiglio."
     },
     "proof": [
-      { "title": "15 camere", "text": "Doppie e triple, tutte con bagno privato" },
-      { "title": "17–23 m²", "text": "Travi a vista e mobili in legno" },
-      { "title": "Colazione", "text": "Oppure mezza pensione, come preferisci" },
-      { "title": "Bar Bottega Moderna", "text": "Tutti i giorni, aperto anche al pubblico" }
+      {
+        "title": "15 camere",
+        "text": "Doppie e triple, tutte con bagno privato"
+      },
+      {
+        "title": "17–23 m²",
+        "text": "Travi a vista e mobili in legno"
+      },
+      {
+        "title": "Colazione",
+        "text": "Oppure mezza pensione, come preferisci"
+      },
+      {
+        "title": "Bar Bottega Moderna",
+        "text": "Tutti i giorni, aperto anche al pubblico"
+      }
     ],
     "intro": {
       "eyebrow": "Il garnì",
@@ -123,9 +135,22 @@
       }
     },
     "servicesTitle": "In tutte le camere",
-    "services": ["Bagno privato con vasca o doccia", "Wi-Fi", "TV", "Travi a vista e mobili in legno", "Colazione o mezza pensione", "Bar Bottega Moderna al piano terra", "Parcheggio pubblico nelle vicinanze"],
+    "services": [
+      "Bagno privato con vasca o doccia",
+      "Wi-Fi",
+      "TV",
+      "Travi a vista e mobili in legno",
+      "Colazione o mezza pensione",
+      "Bar Bottega Moderna al piano terra",
+      "Parcheggio pubblico nelle vicinanze"
+    ],
     "goodTitle": "Buono a sapersi",
-    "good": ["Check-in dalle 14:00 alle 23:00", "Check-out entro le 11:00", "Gestione familiare", "In Piazza Centrale a Dimaro"]
+    "good": [
+      "Check-in dalle 14:00 alle 23:00",
+      "Check-out entro le 11:00",
+      "Gestione familiare",
+      "In Piazza Centrale a Dimaro"
+    ]
   },
   "room": {
     "metaTitle": "{name} · {size} m², {guests} ospiti | Garnì della Locanda, Dimaro Folgarida",
@@ -141,17 +166,8 @@
     "photo": "Foto {n} della {name}"
   },
   "breakfast": {
-    "meta": {
-      "title": "Colazione | Garnì della Locanda, Dimaro Folgarida",
-      "description": "La colazione al Garnì della Locanda: una sala calda con pareti in legno, croissant e dolci al banco per iniziare la giornata in Val di Sole."
-    },
-    "hero": {
-      "eyebrow": "Colazione",
-      "title": "Il buongiorno comincia qui.",
-      "lead": "Una sala calda con pareti in legno, croissant e dolci al banco: il modo giusto per iniziare una giornata in Val di Sole."
-    },
     "manifesto": {
-      "eyebrow": "Al mattino",
+      "eyebrow": "Colazione",
       "title": "Prima le piste e i sentieri. Prima ancora, la colazione.",
       "text": "La giornata in montagna parte da qui: un tavolo tranquillo, qualcosa di buono e il tempo di fare con calma. Puoi scegliere il pernottamento con colazione o la mezza pensione."
     },
@@ -164,22 +180,17 @@
       "eyebrow": "Al banco",
       "title": "Croissant e dolci.",
       "text": "Al banco trovi croissant e dolci, per partire carichi verso le piste, i sentieri o le ciclabili della valle."
-    },
-    "final": {
-      "title": "Colazione o mezza pensione: scegli tu.",
-      "text": "Inviaci le tue date e dicci se preferisci colazione o mezza pensione: ti rispondiamo con disponibilità e prezzo.",
-      "cta": "Richiedi disponibilità"
     }
   },
   "bar": {
     "meta": {
       "title": "Bottega Moderna, bar a Dimaro Folgarida aperto a tutti | Garnì della Locanda",
-      "description": "Bottega Moderna, il bar del Garnì della Locanda in Piazza Centrale 11 a Dimaro Folgarida: aperto a tutti, tutti i giorni dalle 9:30 alle 13:30 e dalle 17 alle 22."
+      "description": "Bottega Moderna, il bar del Garnì della Locanda a Dimaro Folgarida, dove si serve anche la colazione: aperto a tutti, tutti i giorni 9:30–13:30 e 17–22."
     },
     "hero": {
       "eyebrow": "Il bar",
       "title": "Bottega Moderna.",
-      "lead": "Il bar del garnì, in Piazza Centrale a Dimaro. Aperto tutti i giorni, anche a chi non dorme da noi."
+      "lead": "Il bar del garnì, in Piazza Centrale a Dimaro: qui serviamo anche la colazione. Aperto tutti i giorni, anche a chi non dorme da noi."
     },
     "manifesto": {
       "eyebrow": "Aperto a tutti",
@@ -187,16 +198,19 @@
       "text": "Bottega Moderna è il bar al piano terra del garnì. Non serve essere nostri ospiti: passa per un caffè al mattino, una pausa dopo le piste o i sentieri, o un drink la sera."
     },
     "pillars": [
-      { "title": "Mattina", "text": "Dalle 9:30 alle 13:30, per il caffè e una pausa prima o dopo le piste." },
-      { "title": "Sera", "text": "Dalle 17:00 alle 22:00, per rientrare dalla giornata e brindare in piazza." },
-      { "title": "Tutti i giorni", "text": "Aperto ogni giorno, agli ospiti del garnì e a chiunque passi da Dimaro." }
+      {
+        "title": "Mattina",
+        "text": "Dalle 9:30 alle 13:30, per il caffè e una pausa prima o dopo le piste."
+      },
+      {
+        "title": "Sera",
+        "text": "Dalle 17:00 alle 22:00, per rientrare dalla giornata e brindare in piazza."
+      },
+      {
+        "title": "Tutti i giorni",
+        "text": "Aperto ogni giorno, agli ospiti del garnì e a chiunque passi da Dimaro."
+      }
     ],
-    "morning": {
-      "eyebrow": "Al banco",
-      "title": "Il caffè, come si deve.",
-      "text": "Croissant e dolci al banco, il caffè fatto bene e il tempo di fare due chiacchiere. Il modo più semplice per iniziare la giornata a Dimaro.",
-      "note": "Tutti i giorni 9:30 – 13:30 · 17:00 – 22:00"
-    },
     "quote": "Il bar della piazza. Aperto a chi dorme da noi e a chi passa di qui.",
     "visit": {
       "eyebrow": "Dove siamo",
@@ -218,18 +232,36 @@
       "eyebrow": "Inverno",
       "title": "Neve a pochi minuti.",
       "items": [
-        { "title": "Folgarida-Marilleva", "text": "Gli impianti sono a pochi minuti dal garnì. Da qui scii fino a Madonna di Campiglio nello Skiarea Campiglio Dolomiti di Brenta." },
-        { "title": "Passo del Tonale", "text": "Piste in quota e il ghiacciaio Presena, per chi cerca neve sicura per tutta la stagione." },
-        { "title": "Fondo e ciaspole", "text": "Anelli di fondo e percorsi con le ciaspole nei boschi della valle, per chi preferisce il silenzio alla velocità." }
+        {
+          "title": "Folgarida-Marilleva",
+          "text": "Gli impianti sono a pochi minuti dal garnì. Da qui scii fino a Madonna di Campiglio nello Skiarea Campiglio Dolomiti di Brenta."
+        },
+        {
+          "title": "Passo del Tonale",
+          "text": "Piste in quota e il ghiacciaio Presena, per chi cerca neve sicura per tutta la stagione."
+        },
+        {
+          "title": "Fondo e ciaspole",
+          "text": "Anelli di fondo e percorsi con le ciaspole nei boschi della valle, per chi preferisce il silenzio alla velocità."
+        }
       ]
     },
     "summer": {
       "eyebrow": "Estate",
       "title": "Fiumi, sentieri e due ruote.",
       "items": [
-        { "title": "Ciclabile della Val di Sole", "text": "La pista ciclabile passa da Dimaro e segue il torrente Noce lungo la valle. Perfetta in famiglia, anche in e-bike." },
-        { "title": "Rafting sul Noce", "text": "Il Noce è uno dei fiumi più apprezzati d'Europa per rafting e kayak, con percorsi per principianti ed esperti." },
-        { "title": "Trekking nei parchi", "text": "Il Parco Nazionale dello Stelvio e il Parco Naturale Adamello Brenta: sentieri, malghe e laghi alpini per ogni livello." }
+        {
+          "title": "Ciclabile della Val di Sole",
+          "text": "La pista ciclabile passa da Dimaro e segue il torrente Noce lungo la valle. Perfetta in famiglia, anche in e-bike."
+        },
+        {
+          "title": "Rafting sul Noce",
+          "text": "Il Noce è uno dei fiumi più apprezzati d'Europa per rafting e kayak, con percorsi per principianti ed esperti."
+        },
+        {
+          "title": "Trekking nei parchi",
+          "text": "Il Parco Nazionale dello Stelvio e il Parco Naturale Adamello Brenta: sentieri, malghe e laghi alpini per ogni livello."
+        }
       ]
     },
     "base": {
@@ -270,6 +302,10 @@
       "sent": "Grazie! Abbiamo ricevuto la tua richiesta e ti rispondiamo via email al più presto."
     },
     "asideTitle": "Perché richiedere qui",
-    "aside": ["Risposta diretta da chi gestisce il garnì", "Nessun pagamento richiesto ora", "Colazione o mezza pensione, come preferisci"]
+    "aside": [
+      "Risposta diretta da chi gestisce il garnì",
+      "Nessun pagamento richiesto ora",
+      "Colazione o mezza pensione, come preferisci"
+    ]
   }
 }

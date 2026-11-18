@@ -7,7 +7,7 @@ import { readFileSync, writeFileSync, mkdirSync, rmSync, cpSync } from 'node:fs'
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { PUBLIC_URL, LANGS, ROOMS, PAGES } from './src/data.mjs';
-import { context, home, rooms, room, breakfast, bar, valdisole, request } from './src/render.mjs';
+import { context, home, rooms, room, bar, valdisole, request } from './src/render.mjs';
 
 const root = dirname(fileURLToPath(import.meta.url));
 const COMING = !!process.env.COMING_SOON;
@@ -19,7 +19,6 @@ const pages = [
   [PAGES.home, home],
   [PAGES.rooms, rooms],
   ...ROOMS.map((r) => [`${PAGES.rooms}${r.slug}/`, (c) => room(c, r)]),
-  [PAGES.breakfast, breakfast],
   [PAGES.bar, bar],
   [PAGES.valdisole, valdisole],
   [PAGES.request, request],

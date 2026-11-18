@@ -41,7 +41,6 @@ export const BAR_HOURS = [['09:30', '13:30'], ['17:00', '22:00']];
 export const PAGES = {
   home: '',
   rooms: 'camere/',
-  breakfast: 'colazione/',
   bar: 'bar/',
   valdisole: 'val-di-sole/',
   request: 'richiesta/',

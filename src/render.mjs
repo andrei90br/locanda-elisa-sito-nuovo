@@ -31,7 +31,6 @@ function header(c) {
   const { t, href } = c;
   const nav = [
     ['rooms', PAGES.rooms],
-    ['breakfast', PAGES.breakfast],
     ['bar', PAGES.bar],
     ['valdisole', PAGES.valdisole],
   ];
@@ -78,7 +77,6 @@ function footer(c) {
         <ul class="footer-links">
           <li><a href="${href(PAGES.rooms)}">${e(t.nav.rooms)}</a></li>
           ${ROOMS.map((r) => `<li><a href="${roomHref(c, r)}">${e(t.rooms.types[r.key].name)}</a></li>`).join('\n          ')}
-          <li><a href="${href(PAGES.breakfast)}">${e(t.nav.breakfast)}</a></li>
         </ul>
         <p class="footer-small">${e(t.footer.checkin)}</p>
       </div>
@@ -86,6 +84,7 @@ function footer(c) {
         <p class="footer-title">${e(t.footer.bar)}</p>
         <ul class="footer-links">
           <li><a href="${href(PAGES.bar)}">${e(t.nav.bar)}</a></li>
+          <li><a href="${href(PAGES.bar)}#colazione">${e(t.nav.breakfast)}</a></li>
         </ul>
         <p class="footer-small">${e(t.footer.hours)}</p>
         <p class="footer-title">${e(t.footer.discover)}</p>
@@ -280,7 +279,7 @@ export function home(c) {
       </div>
     </section>
 ${feature(c, h.stay, c.href(PAGES.rooms), ROOMS[0].photos[0])}
-${feature(c, h.breakfast, c.href(PAGES.breakfast), IMG.breakfast, true)}
+${feature(c, h.breakfast, c.href(PAGES.bar) + '#colazione', IMG.breakfast, true)}
 ${feature(c, h.bar, c.href(PAGES.bar), IMG.bar)}
 
     <section class="section">
@@ -409,23 +408,6 @@ export function room(c, r) {
   return layout(c, { title: fill(p.metaTitle, vars), description: fill(p.metaDescription, vars), image: r.photos[0], body });
 }
 
-export function breakfast(c) {
-  const t = c.t, b = t.breakfast;
-  const body = `${pageHero(c, b.hero, IMG.breakfast, 'center 60%')}
-
-    <section class="section">
-      <div class="wrap narrow center">
-        <p class="eyebrow">${e(b.manifesto.eyebrow)}</p>
-        <h2>${e(b.manifesto.title)}</h2>
-        <p class="lead">${e(b.manifesto.text)}</p>
-      </div>
-    </section>
-${feature(c, b.room, null, IMG.breakfast)}
-${feature(c, b.counter, null, IMG.croissant, true)}
-${finalCta(c, b.final)}`;
-  return layout(c, { title: b.meta.title, description: b.meta.description, image: IMG.breakfast, body, jsonld: baseJsonLd(c) });
-}
-
 export function bar(c) {
   const t = c.t, b = t.bar;
   const body = `${pageHero(c, b.hero, IMG.bar, 'center 40%')}
@@ -440,7 +422,16 @@ export function bar(c) {
         ${b.pillars.map((p, i) => `<article><span class="num">0${i + 1}</span><h3>${e(p.title)}</h3><p>${e(p.text)}</p></article>`).join('\n        ')}
       </div>
     </section>
-${feature(c, b.morning, null, IMG.croissant)}
+
+    <section class="section" id="colazione">
+      <div class="wrap narrow center">
+        <p class="eyebrow">${e(t.breakfast.manifesto.eyebrow)}</p>
+        <h2>${e(t.breakfast.manifesto.title)}</h2>
+        <p class="lead">${e(t.breakfast.manifesto.text)}</p>
+      </div>
+    </section>
+${feature(c, t.breakfast.room, null, IMG.breakfast)}
+${feature(c, t.breakfast.counter, null, IMG.croissant, true)}
 
     <section class="quote"><div class="wrap narrow"><p>${e(b.quote)}</p></div></section>
 

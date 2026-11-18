@@ -17,8 +17,7 @@ Sito su più pagine, in italiano (radice), inglese (`/en/`) e tedesco (`/de/`), 
 /camere/          le camere
 /camere/doppia/   camera doppia
 /camere/tripla/   camera tripla
-/colazione/       colazione
-/bar/             bar Bottega Moderna (aperto anche al pubblico, 9:30–13:30 e 17–22)
+/bar/             bar Bottega Moderna e colazione (#colazione); bar aperto anche al pubblico, 9:30–13:30 e 17–22
 /val-di-sole/     cosa fare in Val di Sole
 /richiesta/       modulo di richiesta (FormSubmit verso info@locandaelisa.it)
 ```

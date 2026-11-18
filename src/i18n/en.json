@@ -50,10 +50,22 @@
       "lead": "15 double and triple rooms with private bathroom, breakfast and our Bottega Moderna bar, in the centre of Dimaro Folgarida, a few minutes from Madonna di Campiglio."
     },
     "proof": [
-      { "title": "15 rooms", "text": "Doubles and triples, all with private bathroom" },
-      { "title": "17–23 m²", "text": "Exposed beams and wooden furniture" },
-      { "title": "Breakfast", "text": "Or half board, as you prefer" },
-      { "title": "Bottega Moderna bar", "text": "Every day, open to the public too" }
+      {
+        "title": "15 rooms",
+        "text": "Doubles and triples, all with private bathroom"
+      },
+      {
+        "title": "17–23 m²",
+        "text": "Exposed beams and wooden furniture"
+      },
+      {
+        "title": "Breakfast",
+        "text": "Or half board, as you prefer"
+      },
+      {
+        "title": "Bottega Moderna bar",
+        "text": "Every day, open to the public too"
+      }
     ],
     "intro": {
       "eyebrow": "The garnì",
@@ -123,9 +135,22 @@
       }
     },
     "servicesTitle": "In every room",
-    "services": ["Private bathroom with bath or shower", "Wi-Fi", "TV", "Exposed beams and wooden furniture", "Breakfast or half board", "Bottega Moderna bar on the ground floor", "Public parking nearby"],
+    "services": [
+      "Private bathroom with bath or shower",
+      "Wi-Fi",
+      "TV",
+      "Exposed beams and wooden furniture",
+      "Breakfast or half board",
+      "Bottega Moderna bar on the ground floor",
+      "Public parking nearby"
+    ],
     "goodTitle": "Good to know",
-    "good": ["Check-in from 2 pm to 11 pm", "Check-out by 11 am", "Family-run", "On Piazza Centrale in Dimaro"]
+    "good": [
+      "Check-in from 2 pm to 11 pm",
+      "Check-out by 11 am",
+      "Family-run",
+      "On Piazza Centrale in Dimaro"
+    ]
   },
   "room": {
     "metaTitle": "{name} · {size} m², {guests} guests | Garnì della Locanda, Dimaro Folgarida",
@@ -141,17 +166,8 @@
     "photo": "{name}, photo {n}"
   },
   "breakfast": {
-    "meta": {
-      "title": "Breakfast | Garnì della Locanda, Dimaro Folgarida",
-      "description": "Breakfast at Garnì della Locanda: a warm wood-panelled room, croissants and pastries at the counter to start your day in Val di Sole."
-    },
-    "hero": {
-      "eyebrow": "Breakfast",
-      "title": "Good mornings start here.",
-      "lead": "A warm wood-panelled room, croissants and pastries at the counter: the right way to start a day in Val di Sole."
-    },
     "manifesto": {
-      "eyebrow": "In the morning",
+      "eyebrow": "Breakfast",
       "title": "First the slopes and trails. Before that, breakfast.",
       "text": "A mountain day starts here: a quiet table, something good and time to take it easy. Choose bed and breakfast or half board."
     },
@@ -164,22 +180,17 @@
       "eyebrow": "At the counter",
       "title": "Croissants and pastries.",
       "text": "At the counter you'll find croissants and pastries, to set off full of energy for the slopes, trails or cycle paths of the valley."
-    },
-    "final": {
-      "title": "Breakfast or half board: your choice.",
-      "text": "Send us your dates and tell us whether you prefer breakfast or half board: we'll reply with availability and price.",
-      "cta": "Check availability"
     }
   },
   "bar": {
     "meta": {
       "title": "Bottega Moderna, bar in Dimaro Folgarida open to everyone | Garnì della Locanda",
-      "description": "Bottega Moderna, the bar of Garnì della Locanda at Piazza Centrale 11 in Dimaro Folgarida: open to everyone, every day from 9:30 am to 1:30 pm and from 5 pm to 10 pm."
+      "description": "Bottega Moderna, the bar of Garnì della Locanda in Dimaro Folgarida, where breakfast is served too: open to everyone, every day 9:30–13:30 and 17:00–22:00."
     },
     "hero": {
       "eyebrow": "The bar",
       "title": "Bottega Moderna.",
-      "lead": "The garnì's bar, on Piazza Centrale in Dimaro. Open every day, also to those not staying with us."
+      "lead": "The garnì's bar on Piazza Centrale in Dimaro, where we also serve breakfast. Open every day, also to those not staying with us."
     },
     "manifesto": {
       "eyebrow": "Open to everyone",
@@ -187,16 +198,19 @@
       "text": "Bottega Moderna is the bar on the garnì's ground floor. You don't need to be our guest: stop by for a morning coffee, a break after the slopes or trails, or a drink in the evening."
     },
     "pillars": [
-      { "title": "Morning", "text": "From 9:30 to 13:30, for coffee and a break before or after skiing." },
-      { "title": "Evening", "text": "From 17:00 to 22:00, to unwind after the day and toast on the square." },
-      { "title": "Every day", "text": "Open daily, to garnì guests and to anyone passing through Dimaro." }
+      {
+        "title": "Morning",
+        "text": "From 9:30 to 13:30, for coffee and a break before or after skiing."
+      },
+      {
+        "title": "Evening",
+        "text": "From 17:00 to 22:00, to unwind after the day and toast on the square."
+      },
+      {
+        "title": "Every day",
+        "text": "Open daily, to garnì guests and to anyone passing through Dimaro."
+      }
     ],
-    "morning": {
-      "eyebrow": "At the counter",
-      "title": "Coffee, done right.",
-      "text": "Croissants and pastries at the counter, a well-made coffee and time for a chat. The simplest way to start the day in Dimaro.",
-      "note": "Every day 9:30 – 13:30 · 17:00 – 22:00"
-    },
     "quote": "The bar on the square. Open to our guests and to everyone passing by.",
     "visit": {
       "eyebrow": "Where we are",
@@ -218,18 +232,36 @@
       "eyebrow": "Winter",
       "title": "Snow a few minutes away.",
       "items": [
-        { "title": "Folgarida-Marilleva", "text": "The lifts are a few minutes from the garnì. From here you can ski all the way to Madonna di Campiglio in the Skiarea Campiglio Dolomiti di Brenta." },
-        { "title": "Passo del Tonale", "text": "High-altitude slopes and the Presena glacier, for reliable snow all season long." },
-        { "title": "Cross-country and snowshoes", "text": "Cross-country loops and snowshoe trails through the valley's woods, for those who prefer silence to speed." }
+        {
+          "title": "Folgarida-Marilleva",
+          "text": "The lifts are a few minutes from the garnì. From here you can ski all the way to Madonna di Campiglio in the Skiarea Campiglio Dolomiti di Brenta."
+        },
+        {
+          "title": "Passo del Tonale",
+          "text": "High-altitude slopes and the Presena glacier, for reliable snow all season long."
+        },
+        {
+          "title": "Cross-country and snowshoes",
+          "text": "Cross-country loops and snowshoe trails through the valley's woods, for those who prefer silence to speed."
+        }
       ]
     },
     "summer": {
       "eyebrow": "Summer",
       "title": "Rivers, trails and two wheels.",
       "items": [
-        { "title": "Val di Sole cycle path", "text": "The cycle path runs through Dimaro and follows the Noce river along the valley. Perfect for families, e-bikes too." },
-        { "title": "Rafting on the Noce", "text": "The Noce is one of Europe's most popular rivers for rafting and kayaking, with routes for beginners and experts." },
-        { "title": "Trekking in the parks", "text": "Stelvio National Park and Adamello Brenta Nature Park: trails, mountain huts and alpine lakes for every level." }
+        {
+          "title": "Val di Sole cycle path",
+          "text": "The cycle path runs through Dimaro and follows the Noce river along the valley. Perfect for families, e-bikes too."
+        },
+        {
+          "title": "Rafting on the Noce",
+          "text": "The Noce is one of Europe's most popular rivers for rafting and kayaking, with routes for beginners and experts."
+        },
+        {
+          "title": "Trekking in the parks",
+          "text": "Stelvio National Park and Adamello Brenta Nature Park: trails, mountain huts and alpine lakes for every level."
+        }
       ]
     },
     "base": {
@@ -270,6 +302,10 @@
       "sent": "Thank you! We have received your enquiry and will reply by email as soon as possible."
     },
     "asideTitle": "Why enquire here",
-    "aside": ["A direct reply from the people who run the garnì", "No payment required now", "Breakfast or half board, as you prefer"]
+    "aside": [
+      "A direct reply from the people who run the garnì",
+      "No payment required now",
+      "Breakfast or half board, as you prefer"
+    ]
   }
 }
