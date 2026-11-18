@@ -1,0 +1,317 @@
+{
+  "locale": "pl_PL",
+  "nav": {
+    "skip": "Przejdź do treści",
+    "label": "Menu główne",
+    "rooms": "Pokoje",
+    "breakfast": "Śniadanie",
+    "bar": "Bar Bottega Moderna",
+    "valdisole": "Val di Sole",
+    "where": "Gdzie jesteśmy",
+    "languages": "Język",
+    "open": "Otwórz menu",
+    "request": "Sprawdź dostępność"
+  },
+  "booking": {
+    "label": "Sprawdź dostępność pokoi",
+    "arrival": "Przyjazd",
+    "departure": "Wyjazd",
+    "adults": "Dorośli",
+    "children": "Dzieci",
+    "submit": "Sprawdź dostępność"
+  },
+  "common": {
+    "explore": "Odkryj",
+    "request": "Zapytaj",
+    "address": "Piazza Centrale 11, 38025 Dimaro Folgarida (TN), Włochy",
+    "map": "Otwórz w Mapach Google",
+    "hoursTitle": "Godziny otwarcia baru Bottega Moderna",
+    "morning": "Rano",
+    "evening": "Po południu i wieczorem",
+    "everyDay": "Codziennie, otwarty także dla gości z zewnątrz",
+    "guests": "{n} os.",
+    "allRooms": "Wszystkie pokoje"
+  },
+  "footer": {
+    "stay": "Pobyt",
+    "bar": "Bar",
+    "discover": "Odkryj",
+    "checkin": "Zameldowanie 14:00–23:00 · Wymeldowanie do 11:00",
+    "hours": "Codziennie 9:30–13:30 i 17:00–22:00 · Otwarty dla wszystkich"
+  },
+  "home": {
+    "meta": {
+      "title": "Garnì della Locanda | Pokoje ze śniadaniem w Dimaro Folgarida, Val di Sole",
+      "description": "Garnì na głównym placu Dimaro Folgarida w Val di Sole: 15 pokoi dwu-, trzy- i czteroosobowych z prywatną łazienką, śniadanie i bar Bottega Moderna otwarty dla wszystkich."
+    },
+    "hero": {
+      "eyebrow": "Dimaro Folgarida · Val di Sole · Trentino",
+      "title": "W centrum Dimaro, 5 minut od stoków narciarskich.",
+      "lead": "15 pokoi dwu-, trzy- i czteroosobowych z prywatną łazienką przy Piazza Centrale w Dimaro Folgarida: skibus zawiezie Cię na stok w 5 minut. Śniadanie i nasz bar Bottega Moderna na parterze."
+    },
+    "proof": [
+      {
+        "title": "15 pokoi",
+        "text": "Dwu-, trzy- i czteroosobowe, wszystkie z prywatną łazienką"
+      },
+      {
+        "title": "Stoki w 5 minut",
+        "text": "Skibusem z centrum Dimaro"
+      },
+      {
+        "title": "Śniadanie",
+        "text": "Lub opcja z obiadokolacją, jak wolisz"
+      },
+      {
+        "title": "Bar Bottega Moderna",
+        "text": "Codziennie, otwarty także dla gości z zewnątrz"
+      }
+    ],
+    "intro": {
+      "eyebrow": "Garnì",
+      "title": "Poczuj się jak w domu, na placu w Dimaro.",
+      "text": "Garnì o przyjaznym charakterze i spokojnej, kameralnej atmosferze. Pokoje na piętrze, śniadanie i bar na parterze: wszystko, czego potrzebujesz, by odpocząć w sercu Val di Sole."
+    },
+    "stay": {
+      "eyebrow": "Pokoje",
+      "title": "Proste i drewniane, w stylu Trentino.",
+      "text": "Pokoje dwu-, trzy- i czteroosobowe z drewnianymi belkami i meblami, prywatną łazienką z wanną lub prysznicem, TV i Wi-Fi. Ze śniadaniem lub z obiadokolacją.",
+      "cta": "Zobacz pokoje"
+    },
+    "breakfast": {
+      "eyebrow": "Śniadanie",
+      "title": "Dobry dzień zaczyna się tutaj.",
+      "text": "Przytulna sala wyłożona drewnem, rogaliki i słodkie wypieki przy ladzie: najlepszy początek dnia na stoku lub na szlaku.",
+      "cta": "Zobacz śniadanie"
+    },
+    "bar": {
+      "eyebrow": "Bar Bottega Moderna",
+      "title": "Nasz bar, otwarty dla wszystkich.",
+      "text": "Na parterze znajduje się Bottega Moderna, bar naszego garnì: kawa rano, przerwa po nartach, drink wieczorem. Otwarty codziennie, także dla osób, które u nas nie nocują.",
+      "note": "Codziennie 9:30 – 13:30 · 17:00 – 22:00",
+      "cta": "Zobacz bar"
+    },
+    "exp": {
+      "eyebrow": "Atrakcje",
+      "title": "Val di Sole tuż za drzwiami.",
+      "text": "Zimą narty w Folgarida-Marilleva i Madonna di Campiglio. Latem ścieżka rowerowa, rafting na rzece Noce i szlaki dwóch parków przyrody. Ty wybierasz, jak spędzić dzień, o resztę zadbamy my.",
+      "cta": "Odkryj Val di Sole"
+    },
+    "where": {
+      "eyebrow": "Gdzie jesteśmy",
+      "title": "Na placu, w samym sercu Dimaro.",
+      "text": "Jesteśmy przy Piazza Centrale w Dimaro Folgarida, kilka minut od wyciągów Folgarida-Marilleva i przy ścieżce rowerowej Val di Sole. Madonna di Campiglio oraz parki Stelvio i Adamello Brenta są na wyciągnięcie ręki."
+    },
+    "final": {
+      "title": "Najlepsze terminy znikają pierwsze.",
+      "text": "Podaj nam swoje daty: odpowiemy, podając dostępność i cenę. Zapytanie jest niezobowiązujące.",
+      "cta": "Sprawdź dostępność"
+    }
+  },
+  "rooms": {
+    "meta": {
+      "title": "Pokoje dwu-, trzy- i czteroosobowe w Dimaro Folgarida, Val di Sole | Garnì della Locanda",
+      "description": "15 pokoi dwu-, trzy- i czteroosobowych z prywatną łazienką, drewnianymi belkami, TV i Wi-Fi w Dimaro Folgarida. Ze śniadaniem lub z obiadokolacją."
+    },
+    "hero": {
+      "eyebrow": "Pokoje",
+      "title": "Twoje schronienie w Val di Sole.",
+      "lead": "15 pokoi dwu-, trzy- i czteroosobowych, urządzonych ze smakiem i dbałością o szczegóły. Wszystkie z prywatną łazienką, TV i Wi-Fi."
+    },
+    "intro": {
+      "title": "Wybierz swój pokój",
+      "text": "Pokoje dwuosobowe 17 m² dla par, trzyosobowe 23 m² oraz czteroosobowe z łóżkiem piętrowym dla rodzin i grup. Ta sama troska, te same usługi, przy placu w Dimaro."
+    },
+    "types": {
+      "double": {
+        "name": "Pokój dwuosobowy",
+        "beds": "1 łóżko małżeńskie",
+        "text": "Przytulny pokój o powierzchni 17 m² z łóżkiem małżeńskim, drewnianymi belkami i meblami. Prywatna łazienka z wanną lub prysznicem, TV i Wi-Fi: wszystko, czego para potrzebuje, by dobrze odpocząć po dniu w Val di Sole."
+      },
+      "triple": {
+        "name": "Pokój trzyosobowy",
+        "beds": "1 łóżko małżeńskie i 1 łóżko pojedyncze",
+        "text": "Więcej miejsca dla trzech osób: 23 m² z łóżkiem małżeńskim i pojedynczym, drewnianymi belkami i meblami. Prywatna łazienka z wanną lub prysznicem, TV i Wi-Fi, idealny dla rodzin i małych grup."
+      },
+      "quad": {
+        "name": "Pokój czteroosobowy",
+        "beds": "1 łóżko małżeńskie i 1 łóżko piętrowe",
+        "text": "Pokój dla czterech osób: łóżko małżeńskie i łóżko piętrowe, drewniane belki i meble. Prywatna łazienka z wanną lub prysznicem, TV i Wi-Fi, idealny dla rodzin z dziećmi i grup przyjaciół."
+      }
+    },
+    "servicesTitle": "W każdym pokoju",
+    "services": [
+      "Prywatna łazienka z wanną lub prysznicem",
+      "Wi-Fi",
+      "TV",
+      "Drewniane belki i meble",
+      "Śniadanie lub obiadokolacja",
+      "Bar Bottega Moderna na parterze",
+      "Parking publiczny w pobliżu"
+    ],
+    "goodTitle": "Warto wiedzieć",
+    "good": [
+      "Zameldowanie od 14:00 do 23:00",
+      "Wymeldowanie do 11:00",
+      "Przy Piazza Centrale w Dimaro"
+    ]
+  },
+  "room": {
+    "metaTitle": "{name} · {size} m², {guests} os. | Garnì della Locanda, Dimaro Folgarida",
+    "metaDescription": "{name} w Dimaro Folgarida: {size} m², {beds}, prywatna łazienka, TV i Wi-Fi. Ze śniadaniem lub z obiadokolacją.",
+    "eyebrow": "Pokój",
+    "factsTitle": "W skrócie",
+    "size": "Powierzchnia",
+    "guests": "Liczba osób",
+    "beds": "Łóżka",
+    "gallery": "Galeria zdjęć",
+    "cta": "Zapytaj o ten pokój",
+    "others": "Zobacz także",
+    "photo": "{name}, zdjęcie {n}",
+    "metaTitleNoSize": "{name} · {guests} os. | Garnì della Locanda, Dimaro Folgarida",
+    "metaDescriptionNoSize": "{name} w Dimaro Folgarida: {beds}, prywatna łazienka, TV i Wi-Fi. Ze śniadaniem lub z obiadokolacją."
+  },
+  "breakfast": {
+    "manifesto": {
+      "eyebrow": "Śniadanie",
+      "title": "Najpierw stoki i szlaki. A przed nimi śniadanie.",
+      "text": "Górski dzień zaczyna się tutaj: spokojny stolik, coś dobrego i czas, by się nie spieszyć. Wybierz opcję ze śniadaniem lub z obiadokolacją."
+    },
+    "room": {
+      "eyebrow": "Sala",
+      "title": "Drewno i ciepłe światło.",
+      "text": "Śniadanie podajemy w naszej sali z drewnianymi ścianami i ciepłym światłem, w przytulnym miejscu, by zacząć dzień we własnym tempie."
+    },
+    "counter": {
+      "eyebrow": "Przy ladzie",
+      "title": "Rogaliki i słodkie wypieki.",
+      "text": "Przy ladzie znajdziesz rogaliki i słodkie wypieki, by z pełną energią ruszyć na stoki, szlaki lub ścieżki rowerowe doliny."
+    }
+  },
+  "bar": {
+    "meta": {
+      "title": "Bottega Moderna, bar w Dimaro Folgarida otwarty dla wszystkich | Garnì della Locanda",
+      "description": "Bottega Moderna, bar Garnì della Locanda w Dimaro Folgarida, w którym podajemy też śniadanie: otwarty dla wszystkich, codziennie 9:30–13:30 i 17:00–22:00."
+    },
+    "hero": {
+      "eyebrow": "Bar",
+      "title": "Bottega Moderna.",
+      "lead": "Bar naszego garnì przy Piazza Centrale w Dimaro, w którym podajemy też śniadanie. Otwarty codziennie, także dla osób, które u nas nie nocują."
+    },
+    "manifesto": {
+      "eyebrow": "Otwarty dla wszystkich",
+      "title": "Przerwa na placu, o każdej porze.",
+      "text": "Bottega Moderna to bar na parterze naszego garnì. Nie musisz być naszym gościem: wpadnij na poranną kawę, przerwę po stoku lub szlaku albo na drinka wieczorem."
+    },
+    "pillars": [
+      {
+        "title": "Rano",
+        "text": "Od 9:30 do 13:30, na kawę i przerwę przed nartami lub po nich."
+      },
+      {
+        "title": "Wieczorem",
+        "text": "Od 17:00 do 22:00, by odpocząć po całym dniu i wznieść toast na placu."
+      },
+      {
+        "title": "Codziennie",
+        "text": "Otwarty każdego dnia, dla gości garnì i dla wszystkich odwiedzających Dimaro."
+      }
+    ],
+    "quote": "Bar na placu. Otwarty dla naszych gości i dla każdego, kto przechodzi obok.",
+    "visit": {
+      "eyebrow": "Gdzie jesteśmy",
+      "title": "Do zobaczenia na placu.",
+      "text": "Bottega Moderna znajduje się na parterze Garnì della Locanda, przy Piazza Centrale w Dimaro Folgarida."
+    }
+  },
+  "valdisole": {
+    "meta": {
+      "title": "Co robić w Val di Sole zimą i latem | Garnì della Locanda",
+      "description": "Narty w Folgarida-Marilleva i Madonna di Campiglio, ścieżka rowerowa Val di Sole, rafting na rzece Noce, trekking w parkach. Wszystko kilka minut od Garnì della Locanda."
+    },
+    "hero": {
+      "eyebrow": "Atrakcje",
+      "title": "Dolina, która nigdy nie stoi w miejscu.",
+      "lead": "Dimaro Folgarida to idealna baza: zimą stoki, latem rzeki i szlaki. Ty wybierasz, jak spędzić dzień, o resztę zadbamy my."
+    },
+    "winter": {
+      "eyebrow": "Zima",
+      "title": "Śnieg kilka minut stąd.",
+      "items": [
+        {
+          "title": "Folgarida-Marilleva",
+          "text": "Wyciągi są kilka minut od garnì. Stąd na nartach dojedziesz aż do Madonna di Campiglio w ośrodku Skiarea Campiglio Dolomiti di Brenta."
+        },
+        {
+          "title": "Passo del Tonale",
+          "text": "Wysokogórskie trasy i lodowiec Presena, dla pewnego śniegu przez cały sezon."
+        },
+        {
+          "title": "Biegówki i rakiety śnieżne",
+          "text": "Trasy biegowe i szlaki na rakiety śnieżne w lasach doliny, dla tych, którzy wolą ciszę od prędkości."
+        }
+      ]
+    },
+    "summer": {
+      "eyebrow": "Lato",
+      "title": "Rzeki, szlaki i dwa kółka.",
+      "items": [
+        {
+          "title": "Ścieżka rowerowa Val di Sole",
+          "text": "Ścieżka rowerowa przebiega przez Dimaro i biegnie wzdłuż rzeki Noce przez całą dolinę. Idealna dla rodzin, także na e-bike'u."
+        },
+        {
+          "title": "Rafting na rzece Noce",
+          "text": "Noce to jedna z najpopularniejszych rzek w Europie do raftingu i kajakarstwa, z trasami dla początkujących i zaawansowanych."
+        },
+        {
+          "title": "Trekking w parkach",
+          "text": "Park Narodowy Stelvio i Park Przyrody Adamello Brenta: szlaki, schroniska i alpejskie jeziora na każdym poziomie."
+        }
+      ]
+    },
+    "base": {
+      "title": "Dzień należy do Ciebie. Reszta do nas.",
+      "text": "Po powrocie ze stoku lub ze szlaku zajrzyj do baru na placu i wejdź do swojego pokoju. Samochód nie jest potrzebny."
+    }
+  },
+  "request": {
+    "meta": {
+      "title": "Informacje i zapytania o rezerwację | Garnì della Locanda",
+      "description": "Zapytaj o dostępność i ceny pokoi w Garnì della Locanda w Dimaro Folgarida, Val di Sole. Zapytanie niezobowiązujące."
+    },
+    "hero": {
+      "eyebrow": "Rezerwacje",
+      "title": "Informacje i zapytania o rezerwację",
+      "lead": "Podaj daty pobytu, liczbę osób i, jeśli chcesz, preferowany pokój. Odpowiemy e-mailem, podając dostępność i cenę."
+    },
+    "form": {
+      "subject": "Zapytanie o pokój – strona Garnì della Locanda",
+      "noCommitment": "Zapytanie niezobowiązujące",
+      "required": "* pola wymagane",
+      "firstName": "Imię",
+      "lastName": "Nazwisko",
+      "email": "E-mail",
+      "phone": "Telefon",
+      "arrival": "Przyjazd",
+      "departure": "Wyjazd",
+      "adults": "Dorośli",
+      "children": "Dzieci",
+      "room": "Pokój",
+      "any": "Bez preferencji",
+      "board": "Wyżywienie",
+      "bb": "Śniadanie",
+      "hb": "Śniadanie i obiadokolacja",
+      "message": "Twoja wiadomość",
+      "privacy": "Wyrażam zgodę na przetwarzanie moich danych w celu otrzymania odpowiedzi na to zapytanie. *",
+      "submit": "Wyślij zapytanie",
+      "sent": "Dziękujemy! Otrzymaliśmy Twoje zapytanie i odpowiemy e-mailem najszybciej, jak to możliwe."
+    },
+    "asideTitle": "Dlaczego warto zapytać tutaj",
+    "aside": [
+      "Odpowiedź bezpośrednio od osób, które prowadzą garnì",
+      "Teraz nie trzeba niczego płacić",
+      "Śniadanie lub obiadokolacja, jak wolisz"
+    ]
+  }
+}

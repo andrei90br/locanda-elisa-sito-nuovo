@@ -12,6 +12,7 @@ export const LANGS = [
   { code: 'it', path: '', label: 'IT' },
   { code: 'en', path: 'en/', label: 'EN' },
   { code: 'de', path: 'de/', label: 'DE' },
+  { code: 'pl', path: 'pl/', label: 'PL' },
 ];
 
 const OLD = 'https://locandaelisa.it/wp-content/uploads/';
