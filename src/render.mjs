@@ -410,7 +410,7 @@ export function room(c, r) {
 
 export function bar(c) {
   const t = c.t, b = t.bar;
-  const body = `${pageHero(c, b.hero, IMG.bar, 'center 40%')}
+  const body = `${pageHero(c, b.hero, IMG.bar, 'center 30%')}
 
     <section class="section">
       <div class="wrap narrow center">
