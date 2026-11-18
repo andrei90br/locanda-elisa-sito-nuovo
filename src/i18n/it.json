@@ -1,0 +1,275 @@
+{
+  "locale": "it_IT",
+  "nav": {
+    "skip": "Vai al contenuto",
+    "label": "Navigazione principale",
+    "rooms": "Camere",
+    "breakfast": "Colazione",
+    "bar": "Bar Bottega Moderna",
+    "valdisole": "Val di Sole",
+    "where": "Dove siamo",
+    "languages": "Lingua",
+    "open": "Apri il menu",
+    "request": "Richiedi disponibilità"
+  },
+  "booking": {
+    "label": "Verifica la disponibilità delle camere",
+    "arrival": "Arrivo",
+    "departure": "Partenza",
+    "adults": "Adulti",
+    "children": "Bambini",
+    "submit": "Verifica disponibilità"
+  },
+  "common": {
+    "explore": "Scopri",
+    "request": "Richiedi",
+    "address": "Piazza Centrale 11, 38025 Dimaro Folgarida (TN)",
+    "map": "Apri in Google Maps",
+    "hoursTitle": "Orari del bar Bottega Moderna",
+    "morning": "Mattina",
+    "evening": "Pomeriggio e sera",
+    "everyDay": "Tutti i giorni, aperto anche al pubblico",
+    "guests": "{n} ospiti",
+    "allRooms": "Tutte le camere"
+  },
+  "footer": {
+    "stay": "Soggiorno",
+    "bar": "Bar",
+    "discover": "Scopri",
+    "checkin": "Check-in 14:00–23:00 · Check-out entro le 11:00",
+    "hours": "Tutti i giorni 9:30–13:30 e 17:00–22:00 · Aperto anche al pubblico"
+  },
+  "home": {
+    "meta": {
+      "title": "Garnì della Locanda | Camere con colazione a Dimaro Folgarida, Val di Sole",
+      "description": "Garnì a gestione familiare in Piazza Centrale a Dimaro Folgarida, Val di Sole: 15 camere doppie e triple con bagno privato, colazione e il bar Bottega Moderna, aperto anche al pubblico."
+    },
+    "hero": {
+      "eyebrow": "Dimaro Folgarida · Val di Sole · Trentino",
+      "title": "Dormi in piazza. Svegliati in Val di Sole.",
+      "lead": "15 camere doppie e triple con bagno privato, la colazione e il nostro bar Bottega Moderna, nel centro di Dimaro Folgarida, a pochi minuti da Madonna di Campiglio."
+    },
+    "proof": [
+      { "title": "15 camere", "text": "Doppie e triple, tutte con bagno privato" },
+      { "title": "17–23 m²", "text": "Travi a vista e mobili in legno" },
+      { "title": "Colazione", "text": "Oppure mezza pensione, come preferisci" },
+      { "title": "Bar Bottega Moderna", "text": "Tutti i giorni, aperto anche al pubblico" }
+    ],
+    "intro": {
+      "eyebrow": "Il garnì",
+      "title": "Sentirsi a casa, in piazza a Dimaro.",
+      "text": "Un garnì a gestione familiare, con un carattere accogliente e un'atmosfera intima e rilassata. Le camere al piano di sopra, la colazione e il bar al piano terra: tutto quello che serve per staccare dalla routine, nel cuore della Val di Sole."
+    },
+    "stay": {
+      "eyebrow": "Le camere",
+      "title": "Semplicità e legno, tipicamente trentini.",
+      "text": "Camere doppie e triple da 17 a 23 m², con travi a vista e mobili in legno, bagno privato con vasca o doccia, TV e Wi-Fi. Pernottamento con colazione o mezza pensione.",
+      "cta": "Scopri le camere"
+    },
+    "breakfast": {
+      "eyebrow": "Colazione",
+      "title": "Il buongiorno comincia qui.",
+      "text": "Una sala calda con pareti in legno, croissant e dolci al banco: il modo giusto per iniziare una giornata sulle piste o sui sentieri.",
+      "cta": "Scopri la colazione"
+    },
+    "bar": {
+      "eyebrow": "Bar Bottega Moderna",
+      "title": "Il nostro bar, aperto a tutti.",
+      "text": "Al piano terra c'è Bottega Moderna, il bar del garnì: un caffè al mattino, una pausa dopo le piste, un drink la sera. Aperto tutti i giorni, anche a chi non dorme da noi.",
+      "note": "Tutti i giorni 9:30 – 13:30 · 17:00 – 22:00",
+      "cta": "Scopri il bar"
+    },
+    "exp": {
+      "eyebrow": "Esperienze",
+      "title": "La Val di Sole, fuori dalla porta.",
+      "text": "D'inverno sci a Folgarida-Marilleva e Madonna di Campiglio. D'estate la ciclabile, il rafting sul Noce e i sentieri di due parchi naturali. Tu scegli la giornata, al resto pensiamo noi.",
+      "cta": "Scopri la Val di Sole"
+    },
+    "where": {
+      "eyebrow": "Dove siamo",
+      "title": "In piazza, nel cuore di Dimaro.",
+      "text": "Siamo in Piazza Centrale a Dimaro Folgarida, a pochi minuti dagli impianti di Folgarida-Marilleva e lungo la ciclabile della Val di Sole. Madonna di Campiglio e i parchi dello Stelvio e dell'Adamello Brenta sono a portata di mano."
+    },
+    "final": {
+      "title": "Le date migliori vanno via per prime.",
+      "text": "Inviaci le tue date: ti rispondiamo con disponibilità e prezzo. La richiesta non è vincolante.",
+      "cta": "Richiedi disponibilità"
+    }
+  },
+  "rooms": {
+    "meta": {
+      "title": "Camere doppie e triple a Dimaro Folgarida, Val di Sole | Garnì della Locanda",
+      "description": "15 camere doppie e triple da 17 a 23 m² con bagno privato, travi a vista, TV e Wi-Fi a Dimaro Folgarida. Colazione o mezza pensione."
+    },
+    "hero": {
+      "eyebrow": "Le camere",
+      "title": "Il tuo rifugio in Val di Sole.",
+      "lead": "15 camere doppie e triple, arredate con gusto e attenzione ai dettagli. Tutte con bagno privato, TV e Wi-Fi."
+    },
+    "intro": {
+      "title": "Scegli la tua camera",
+      "text": "Camere doppie da 17 m² per due persone e camere triple da 23 m² per famiglie e piccoli gruppi. Stessa cura, stessi servizi, in piazza a Dimaro."
+    },
+    "types": {
+      "double": {
+        "name": "Camera Doppia",
+        "beds": "1 letto matrimoniale",
+        "text": "Una camera raccolta di 17 m² con letto matrimoniale, travi a vista e mobili in legno. Bagno privato con vasca o doccia, TV e Wi-Fi: tutto quello che serve a una coppia per riposare bene dopo una giornata in Val di Sole."
+      },
+      "triple": {
+        "name": "Camera Tripla",
+        "beds": "1 letto matrimoniale e 1 letto singolo",
+        "text": "Più spazio per tre: 23 m² con letto matrimoniale e letto singolo, travi a vista e mobili in legno. Bagno privato con vasca o doccia, TV e Wi-Fi, ideale per famiglie e piccoli gruppi."
+      }
+    },
+    "servicesTitle": "In tutte le camere",
+    "services": ["Bagno privato con vasca o doccia", "Wi-Fi", "TV", "Travi a vista e mobili in legno", "Colazione o mezza pensione", "Bar Bottega Moderna al piano terra", "Parcheggio pubblico nelle vicinanze"],
+    "goodTitle": "Buono a sapersi",
+    "good": ["Check-in dalle 14:00 alle 23:00", "Check-out entro le 11:00", "Gestione familiare", "In Piazza Centrale a Dimaro"]
+  },
+  "room": {
+    "metaTitle": "{name} · {size} m², {guests} ospiti | Garnì della Locanda, Dimaro Folgarida",
+    "metaDescription": "{name} a Dimaro Folgarida: {size} m², {beds}, bagno privato, TV e Wi-Fi. Colazione o mezza pensione.",
+    "eyebrow": "Camera",
+    "factsTitle": "In breve",
+    "size": "Superficie",
+    "guests": "Ospiti",
+    "beds": "Letti",
+    "gallery": "Galleria fotografica",
+    "cta": "Richiedi questa camera",
+    "others": "Guarda anche",
+    "photo": "Foto {n} della {name}"
+  },
+  "breakfast": {
+    "meta": {
+      "title": "Colazione | Garnì della Locanda, Dimaro Folgarida",
+      "description": "La colazione al Garnì della Locanda: una sala calda con pareti in legno, croissant e dolci al banco per iniziare la giornata in Val di Sole."
+    },
+    "hero": {
+      "eyebrow": "Colazione",
+      "title": "Il buongiorno comincia qui.",
+      "lead": "Una sala calda con pareti in legno, croissant e dolci al banco: il modo giusto per iniziare una giornata in Val di Sole."
+    },
+    "manifesto": {
+      "eyebrow": "Al mattino",
+      "title": "Prima le piste e i sentieri. Prima ancora, la colazione.",
+      "text": "La giornata in montagna parte da qui: un tavolo tranquillo, qualcosa di buono e il tempo di fare con calma. Puoi scegliere il pernottamento con colazione o la mezza pensione."
+    },
+    "room": {
+      "eyebrow": "La sala",
+      "title": "Legno e luci calde.",
+      "text": "La colazione si serve nella nostra sala con pareti in legno e luci calde, un ambiente raccolto dove iniziare la giornata con calma."
+    },
+    "counter": {
+      "eyebrow": "Al banco",
+      "title": "Croissant e dolci.",
+      "text": "Al banco trovi croissant e dolci, per partire carichi verso le piste, i sentieri o le ciclabili della valle."
+    },
+    "final": {
+      "title": "Colazione o mezza pensione: scegli tu.",
+      "text": "Inviaci le tue date e dicci se preferisci colazione o mezza pensione: ti rispondiamo con disponibilità e prezzo.",
+      "cta": "Richiedi disponibilità"
+    }
+  },
+  "bar": {
+    "meta": {
+      "title": "Bottega Moderna, bar a Dimaro Folgarida aperto a tutti | Garnì della Locanda",
+      "description": "Bottega Moderna, il bar del Garnì della Locanda in Piazza Centrale 11 a Dimaro Folgarida: aperto a tutti, tutti i giorni dalle 9:30 alle 13:30 e dalle 17 alle 22."
+    },
+    "hero": {
+      "eyebrow": "Il bar",
+      "title": "Bottega Moderna.",
+      "lead": "Il bar del garnì, in Piazza Centrale a Dimaro. Aperto tutti i giorni, anche a chi non dorme da noi."
+    },
+    "manifesto": {
+      "eyebrow": "Aperto a tutti",
+      "title": "Una pausa in piazza, a ogni ora giusta.",
+      "text": "Bottega Moderna è il bar al piano terra del garnì. Non serve essere nostri ospiti: passa per un caffè al mattino, una pausa dopo le piste o i sentieri, o un drink la sera."
+    },
+    "pillars": [
+      { "title": "Mattina", "text": "Dalle 9:30 alle 13:30, per il caffè e una pausa prima o dopo le piste." },
+      { "title": "Sera", "text": "Dalle 17:00 alle 22:00, per rientrare dalla giornata e brindare in piazza." },
+      { "title": "Tutti i giorni", "text": "Aperto ogni giorno, agli ospiti del garnì e a chiunque passi da Dimaro." }
+    ],
+    "morning": {
+      "eyebrow": "Al banco",
+      "title": "Il caffè, come si deve.",
+      "text": "Croissant e dolci al banco, il caffè fatto bene e il tempo di fare due chiacchiere. Il modo più semplice per iniziare la giornata a Dimaro.",
+      "note": "Tutti i giorni 9:30 – 13:30 · 17:00 – 22:00"
+    },
+    "quote": "Il bar della piazza. Aperto a chi dorme da noi e a chi passa di qui.",
+    "visit": {
+      "eyebrow": "Dove siamo",
+      "title": "Ti aspettiamo in piazza.",
+      "text": "Bottega Moderna è al piano terra del Garnì della Locanda, in Piazza Centrale a Dimaro Folgarida."
+    }
+  },
+  "valdisole": {
+    "meta": {
+      "title": "Cosa fare in Val di Sole, inverno ed estate | Garnì della Locanda",
+      "description": "Sci a Folgarida-Marilleva e Madonna di Campiglio, ciclabile della Val di Sole, rafting sul Noce, trekking nei parchi. Tutto a pochi minuti dal Garnì della Locanda."
+    },
+    "hero": {
+      "eyebrow": "Esperienze",
+      "title": "Una valle che non si ferma mai.",
+      "lead": "Dimaro Folgarida è il punto di partenza ideale: piste d'inverno, fiumi e sentieri d'estate. Tu scegli la giornata, al resto pensiamo noi."
+    },
+    "winter": {
+      "eyebrow": "Inverno",
+      "title": "Neve a pochi minuti.",
+      "items": [
+        { "title": "Folgarida-Marilleva", "text": "Gli impianti sono a pochi minuti dal garnì. Da qui scii fino a Madonna di Campiglio nello Skiarea Campiglio Dolomiti di Brenta." },
+        { "title": "Passo del Tonale", "text": "Piste in quota e il ghiacciaio Presena, per chi cerca neve sicura per tutta la stagione." },
+        { "title": "Fondo e ciaspole", "text": "Anelli di fondo e percorsi con le ciaspole nei boschi della valle, per chi preferisce il silenzio alla velocità." }
+      ]
+    },
+    "summer": {
+      "eyebrow": "Estate",
+      "title": "Fiumi, sentieri e due ruote.",
+      "items": [
+        { "title": "Ciclabile della Val di Sole", "text": "La pista ciclabile passa da Dimaro e segue il torrente Noce lungo la valle. Perfetta in famiglia, anche in e-bike." },
+        { "title": "Rafting sul Noce", "text": "Il Noce è uno dei fiumi più apprezzati d'Europa per rafting e kayak, con percorsi per principianti ed esperti." },
+        { "title": "Trekking nei parchi", "text": "Il Parco Nazionale dello Stelvio e il Parco Naturale Adamello Brenta: sentieri, malghe e laghi alpini per ogni livello." }
+      ]
+    },
+    "base": {
+      "title": "La giornata è tua. Il riposo è nostro.",
+      "text": "Torni dalla pista o dal sentiero, ti fermi al bar in piazza e sali in camera. Nessuna macchina da prendere."
+    }
+  },
+  "request": {
+    "meta": {
+      "title": "Richiesta informazioni e prenotazioni | Garnì della Locanda",
+      "description": "Richiedi disponibilità e prezzo per le camere del Garnì della Locanda a Dimaro Folgarida, Val di Sole. Richiesta non impegnativa."
+    },
+    "hero": {
+      "eyebrow": "Prenotazioni",
+      "title": "Richiesta informazioni e prenotazioni",
+      "lead": "Indicaci date, numero di ospiti e, se vuoi, la camera che preferisci. Ti rispondiamo via email con disponibilità e prezzo."
+    },
+    "form": {
+      "subject": "Richiesta camera – sito Garnì della Locanda",
+      "noCommitment": "Richiesta non impegnativa",
+      "required": "* campi obbligatori",
+      "firstName": "Nome",
+      "lastName": "Cognome",
+      "email": "Email",
+      "phone": "Telefono",
+      "arrival": "Arrivo",
+      "departure": "Partenza",
+      "adults": "Adulti",
+      "children": "Bambini",
+      "room": "Camera",
+      "any": "Nessuna preferenza",
+      "board": "Trattamento",
+      "bb": "Colazione",
+      "hb": "Mezza pensione",
+      "message": "Richiesta",
+      "privacy": "Acconsento al trattamento dei miei dati per ricevere una risposta a questa richiesta. *",
+      "submit": "Invia la richiesta",
+      "sent": "Grazie! Abbiamo ricevuto la tua richiesta e ti rispondiamo via email al più presto."
+    },
+    "asideTitle": "Perché richiedere qui",
+    "aside": ["Risposta diretta da chi gestisce il garnì", "Nessun pagamento richiesto ora", "Colazione o mezza pensione, come preferisci"]
+  }
+}

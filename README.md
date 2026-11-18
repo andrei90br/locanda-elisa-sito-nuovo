@@ -9,28 +9,32 @@ atlantis.com/dubai/atlantis-the-royal (solo studio di struttura e misure: non è
 
 ## Struttura
 
+Struttura e grafica riprese dal sito della Locanda dei Gemelli (`andrei90br/locandadeigemelli`, branch `sviluppo`).
 Sito su più pagine, in italiano (radice), inglese (`/en/`) e tedesco (`/de/`), con gli stessi percorsi in tutte le lingue:
 
 ```
-/                 home
+/                 home (con barra di prenotazione)
 /camere/          le camere
 /camere/doppia/   camera doppia
 /camere/tripla/   camera tripla
 /colazione/       colazione
-/bar/             bar (aperto anche al pubblico)
-/val-di-sole/     dove siamo
-/contatti/        contatti e domande frequenti
+/bar/             bar Bottega Moderna (aperto anche al pubblico, 9:30–13:30 e 17–22)
+/val-di-sole/     cosa fare in Val di Sole
+/richiesta/       modulo di richiesta (FormSubmit verso info@locandaelisa.it)
 ```
 
 ```
-src/layout.html        parti comuni (head, header, menu, footer, modulo di richiesta)
-src/pages/*.html       contenuto di ogni pagina ({{FIN}} = sezione finale di richiesta, src/fin.html)
-src/lang/*.json        testi in it / en / de (stesse chiavi)
-src/assets/            style.css, main.js, img/ (foto proprie), logo.svg
+src/data.mjs           dati: dominio, contatti, foto, camere, orari del bar, pagine
+src/render.mjs         layout e pagine
+src/i18n/*.json        testi in it / en / de (stesse chiavi)
+src/assets/            css/style.css, js/main.js, img/ (foto proprie, logo, favicon)
 src/coming-soon.html   avviso "il nuovo sito è in arrivo"
-build.mjs              genera site/ (camere e pagine sono elencate in cima al file)
-serve.ps1              anteprima locale su http://localhost:5173/
+build.mjs              genera site/
+serve.ps1              anteprima locale di site/ su http://localhost:5173/
 ```
+
+Il modulo di richiesta usa FormSubmit: la prima richiesta inviata fa arrivare a info@locandaelisa.it
+un'email di attivazione da confermare, poi le richieste arrivano normalmente.
 
 ## Comandi
 
