@@ -42,7 +42,7 @@
   "home": {
     "meta": {
       "title": "Garnì della Locanda | B&B rooms in Dimaro Folgarida, Val di Sole",
-      "description": "Family-run garnì on the main square of Dimaro Folgarida, Val di Sole: 15 double and triple rooms with private bathroom, breakfast and the Bottega Moderna bar, open to the public."
+      "description": "Garnì on the main square of Dimaro Folgarida, Val di Sole: 15 double and triple rooms with private bathroom, breakfast and the Bottega Moderna bar, open to the public."
     },
     "hero": {
       "eyebrow": "Dimaro Folgarida · Val di Sole · Trentino",
@@ -70,7 +70,7 @@
     "intro": {
       "eyebrow": "The garnì",
       "title": "Feel at home, on Dimaro's square.",
-      "text": "A family-run garnì with a welcoming character and a relaxed, intimate atmosphere. Rooms upstairs, breakfast and the bar on the ground floor: everything you need to switch off, in the heart of Val di Sole."
+      "text": "A garnì with a welcoming character and a relaxed, intimate atmosphere. Rooms upstairs, breakfast and the bar on the ground floor: everything you need to switch off, in the heart of Val di Sole."
     },
     "stay": {
       "eyebrow": "The rooms",
@@ -148,7 +148,6 @@
     "good": [
       "Check-in from 2 pm to 11 pm",
       "Check-out by 11 am",
-      "Family-run",
       "On Piazza Centrale in Dimaro"
     ]
   },

@@ -42,7 +42,7 @@
   "home": {
     "meta": {
       "title": "Garnì della Locanda | Camere con colazione a Dimaro Folgarida, Val di Sole",
-      "description": "Garnì a gestione familiare in Piazza Centrale a Dimaro Folgarida, Val di Sole: 15 camere doppie e triple con bagno privato, colazione e il bar Bottega Moderna, aperto anche al pubblico."
+      "description": "Garnì in Piazza Centrale a Dimaro Folgarida, Val di Sole: 15 camere doppie e triple con bagno privato, colazione e il bar Bottega Moderna, aperto anche al pubblico."
     },
     "hero": {
       "eyebrow": "Dimaro Folgarida · Val di Sole · Trentino",
@@ -70,7 +70,7 @@
     "intro": {
       "eyebrow": "Il garnì",
       "title": "Sentirsi a casa, in piazza a Dimaro.",
-      "text": "Un garnì a gestione familiare, con un carattere accogliente e un'atmosfera intima e rilassata. Le camere al piano di sopra, la colazione e il bar al piano terra: tutto quello che serve per staccare dalla routine, nel cuore della Val di Sole."
+      "text": "Un garnì dal carattere accogliente e un'atmosfera intima e rilassata. Le camere al piano di sopra, la colazione e il bar al piano terra: tutto quello che serve per staccare dalla routine, nel cuore della Val di Sole."
     },
     "stay": {
       "eyebrow": "Le camere",
@@ -148,7 +148,6 @@
     "good": [
       "Check-in dalle 14:00 alle 23:00",
       "Check-out entro le 11:00",
-      "Gestione familiare",
       "In Piazza Centrale a Dimaro"
     ]
   },
